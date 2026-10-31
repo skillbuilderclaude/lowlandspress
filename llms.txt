@@ -69,7 +69,9 @@ https://lowlandspress.com/ (Nederlands) · /en/ (Engels) · /de/ (Duits) · /es/
 - [Contact en colofon](https://lowlandspress.com/contact.html): e-mail, KvK, recensie-exemplaren
 - [Privacy](https://lowlandspress.com/privacy.html): geen cookies, geen trackers
 - [Voorwaarden](https://lowlandspress.com/voorwaarden.html): auteursrecht en voorbehoud tekst- en datamining
-- Engelstalige versies: /en/about.html, /en/contact.html, /en/privacy.html, /en/terms.html
+- Engels: /en/about.html, /en/contact.html, /en/privacy.html, /en/terms.html
+- Duits: /de/ueber.html, /de/kontakt.html, /de/datenschutz.html, /de/nutzungsbedingungen.html
+- Spaans: /es/sobre.html, /es/contacto.html, /es/privacidad.html, /es/condiciones.html
 
 ## Contact
 

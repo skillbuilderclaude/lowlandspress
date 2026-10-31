@@ -59,8 +59,16 @@ META = {
  'de': ('Lowlands Press', 'Lowlands Press ist ein unabhängiger Verlag im Südwesten der Niederlande. Bücher auf Niederländisch, Englisch, Deutsch und Spanisch, beginnend mit den Thorne-Thrillern von C.M.R. Thorne.'),
  'es': ('Lowlands Press', 'Lowlands Press es una editorial independiente del suroeste de los Países Bajos. Libros en neerlandés, inglés, alemán y español, empezando por los thrillers de Thorne de C.M.R. Thorne.'),
 }
-PAGINAS = {'nl': ('over.html','contact.html','privacy.html','voorwaarden.html'),
-           'en': ('about.html','contact.html','privacy.html','terms.html')}
+PAGINAS = {'nl': ('over.html', 'contact.html', 'privacy.html', 'voorwaarden.html'),
+           'en': ('about.html', 'contact.html', 'privacy.html', 'terms.html'),
+           'de': ('ueber.html', 'kontakt.html', 'datenschutz.html', 'nutzungsbedingungen.html'),
+           'es': ('sobre.html', 'contacto.html', 'privacidad.html', 'condiciones.html')}
+VOETREGEL = {
+ 'nl': 'Lowlands Press · KvK 52231895 · Klundert, Nederland',
+ 'en': 'Lowlands Press · Chamber of Commerce 52231895 · Klundert, the Netherlands',
+ 'de': 'Lowlands Press · Handelsregister (KvK) 52231895 · Klundert, Niederlande',
+ 'es': 'Lowlands Press · Registro Mercantil (KvK) 52231895 · Klundert, Países Bajos',
+}
 PAGINA_LABEL = {
  'nl': ('Over Lowlands Press','Contact','Privacy','Voorwaarden'),
  'en': ('About Lowlands Press','Contact','Privacy','Terms'),
@@ -151,17 +159,17 @@ def taalnav(actief, voor):
     return '<nav class="languages" aria-label="Language">%s</nav>' % ''.join(stuk)
 
 def voet(taal, voor):
-    paden = PAGINAS['nl'] if taal == 'nl' else PAGINAS['en']
-    pad_voor = voor if taal == 'nl' else (voor + 'en/' if not voor else '')
-    if taal != 'nl' and voor:
-        pad_voor = '../en/'
+    """De zakelijke pagina's staan in dezelfde map als de voorpagina van die taal."""
+    paden = PAGINAS[taal]
     labels = PAGINA_LABEL[taal]
-    links = ''.join('<a href="%s%s">%s</a>' % (pad_voor, p, e(l)) for p, l in zip(paden, labels))
+    links = ''.join('<a href="%s">%s</a>' % (p, e(l)) for p, l in zip(paden, labels))
     return ('<footer><a href="https://www.instagram.com/cmr.thorne/" target="_blank" rel="noreferrer" '
-            'class="instagram"><span aria-hidden="true">◎</span> %s</a>'
+            'class="instagram"><span aria-hidden="true">\u25ce</span> %s</a>'
             '<nav class="voetlinks" aria-label="%s">%s</nav><p>%s</p>'
-            '<p class="voet-kvk">Lowlands Press · KvK 52231895 · Klundert, Nederland</p></footer>'
-            % (e(UI[taal]['volgOpInstagram']), e(labels[0]), links, e(UI[taal]['voet'])))
+            '<p class="voet-kvk">%s</p></footer>'
+            % (e(UI[taal]['volgOpInstagram']), e(labels[0]), links, e(UI[taal]['voet']),
+               e(VOETREGEL[taal])))
+
 
 def schema(taal):
     delen = []
