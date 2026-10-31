@@ -8,16 +8,16 @@
    mag deze override niet omverduwen (mijn stylesheet laadt erna). */
 @media (min-width: 661px){
   .book{ grid-template-columns: auto 1fr; }
+  /* Vangnet als het script niet draait; het script zet de exacte breedte inline. */
+  .cover-wrap{ width: clamp(190px, 30vw, 340px); max-width: 46%; }
 }
 .cover-wrap{
   align-items: stretch;
   padding: 0;
-  max-width: clamp(190px, 30vw, 360px);  /* vangnet bij extreem lange teksten */
 }
 .cover-wrap .cover{
   height: 100%;
-  width: auto;
-  max-width: 100%;
+  width: 100%;
   object-fit: contain;                    /* heel laten, niet bijsnijden */
   display: block;
 }
@@ -83,4 +83,22 @@
 .tekstpagina .gegevens dd{margin:0;color:var(--paper);font-size:15px}
 @media (max-width:620px){
   .tekstpagina .gegevens>div{grid-template-columns:1fr;gap:4px}
+}
+
+/* ---- aangekondigde delen ---- */
+.cover-volgt{
+  display:flex; align-items:center; justify-content:center;
+  width:100%; height:100%; min-height:350px;
+  background:
+    repeating-linear-gradient(135deg, #0e1415 0 14px, #0b1011 14px 28px);
+  border-right:1px solid var(--line);
+}
+.cover-volgt span{
+  color:#5d6665; font:700 11px var(--font-sans); letter-spacing:.22em;
+  text-align:center; line-height:1.8;
+}
+.status-regel{
+  color:#8d9594 !important; font-family:var(--font-sans), Arial, sans-serif !important;
+  font-size:14px !important; line-height:1.6 !important; max-width:460px;
+  border-left:2px solid var(--line); padding-left:14px; margin:0 !important;
 }
