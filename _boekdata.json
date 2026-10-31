@@ -1,0 +1,1071 @@
+{
+ "_over": "Bron-gegevens voor de boekpagina's op lowlandspress.com. Samengesteld 2026-10-31 uitsluitend uit bestanden in ~/Boeken; elk veld dat niet zwart op wit in een bestand stond, staat op null. Flapteksten zijn letterlijk overgenomen (alleen markdown-nadruk verwijderd); flaptekst_bron noemt per editie het bestand. Prijzen komen uit reeks/prijzen.md, dat ze voor elk boek in elke taal vaststelt (4,99 / 19,99 / 29,99); ze zijn niet per boek apart geverifieerd op de winkelpagina.",
+ "_let_op": [
+  "Boek 3 NL hardcover-ISBN: uitgeverij/tools/isbn.py noemt 979-8171957636, maar dat nummer staat in HARDCOVERS-2026-09-04.md en in HANDOVER-NIEUWE-CHAT.md op naam van boek 1 NL hardcover. Hier aan boek 1 toegekend; boek 3 NL hardcover staat daarom op null.",
+  "Boek 2 EN paperback: upload-log noemt 442 pagina's, reeks/store-links.md 441. 442 overgenomen (de latere, gepubliceerde bouw).",
+  "Boek 6 NL woorden: VOORTGANG.md noemt 101.145 en VERTAALSTATUS.md 102.378 (bevroren master, basis van de vertalingen). 102.378 overgenomen.",
+  "Boek 5 ES hardcover: 347 p. in RUNBOOK-ZONDAG-11-OKTOBER.md, 348 p. na de herbouw met de recensieverzoek-pagina (WERKLIJST.md). 348 overgenomen.",
+  "Boek 4 en boek 5 hebben geen gedocumenteerde verschijningsdatum per editie; boek 6 alleen de EN-paperback (30-10-2026, Goodreads via KANALEN-EN-RECENSIES-2026-10-31.md).",
+  "Boek 7 is nergens gepubliceerd en heeft nog geen flaptekst of metadata; alleen de GATE 1-titels per taal staan vast (boek7/PLOT.md §1, reeks/QUEUE.md)."
+ ],
+ "boeken": [
+  {
+   "n": 1,
+   "slug": "het-huis-weet-het",
+   "auteur": "C.M.R. Thorne",
+   "bron": [
+    "/Users/skillbuilder/Boeken/het-huis-weet-het/publicatie/blurb-nl.md",
+    "/Users/skillbuilder/Boeken/het-huis-weet-het/publicatie/metadata-nl.md",
+    "/Users/skillbuilder/Boeken/het-huis-weet-het/publicatie/metadata-es.md",
+    "/Users/skillbuilder/Boeken/het-huis-weet-het/publicatie/upload-log.md",
+    "/Users/skillbuilder/Boeken/het-huis-weet-het/publicatie/HANDOVER-NIEUWE-CHAT.md",
+    "/Users/skillbuilder/Boeken/het-huis-weet-het/tools/gen_wrap.py",
+    "/Users/skillbuilder/Boeken/het-huis-weet-het/tools/gen_epub.py",
+    "/Users/skillbuilder/Boeken/uitgeverij/publicatie/HARDCOVERS-2026-09-04.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/publicatie/KANALEN-EN-RECENSIES-2026-10-31.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/publicatie/VERVANGINGSREGISTER.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/tools/reeks.py",
+    "/Users/skillbuilder/Boeken/reeks/prijzen.md",
+    "/Users/skillbuilder/Boeken/reeks/REEKS.md",
+    "/Users/skillbuilder/Boeken/website/boeken.json",
+    "/Users/skillbuilder/Boeken/STATUS.md"
+   ],
+   "ed": {
+    "nl": {
+     "titel": "Het Huis Weet Het",
+     "ondertitel": "Een psychologische thriller",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Acht maanden na de fatale val van zijn vrouw probeert Daniël Vos overeind te blijven. Dan stuurt de verzekeraar hem de smart-home-data van die nacht. Eén regel klopt niet: de voordeur ging open om 03:12. Terwijl hij sliep. Terwijl Marit onderaan de trap lag.",
+      "De politie heropent de zaak – en Daniël is de eerste verdachte. Om zijn naam te zuiveren graaft hij in de data, en in het leven van zijn vrouw. Elke laag die hij afpelt legt een nieuwe leugen bloot: Marit was niet wie ze zei dat ze was. En iemand in de keurige, vertrouwde wijk wist dat allang.",
+      "Het huis registreerde alles: elke deur, elke stap, elke seconde. Maar wie de logboeken kan wissen, kan ook wachten – en kijkt al veel langer mee dan Daniël denkt."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/het-huis-weet-het/publicatie/blurb-nl.md (## Achterkanttekst)",
+     "paginas_paperback": 402,
+     "paginas_hardcover": 322,
+     "isbn_paperback": null,
+     "isbn_hardcover": "979-8171957636",
+     "asin_ebook": "B0H8FK32GL",
+     "asin_paperback": "B0H8FWK4R5",
+     "asin_hardcover": null,
+     "verschenen": "2026-07-10",
+     "woorden": 87301,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": [
+      "psychologische thriller nederlands",
+      "domestic thriller gezinsgeheimen",
+      "thriller smart home domotica",
+      "domestic noir thriller met wending",
+      "echtgenoot verdacht van moord thriller",
+      "thriller familiegeheim verleden plottwist",
+      "spannend boek nederlandse thriller pageturner"
+     ],
+     "categorieen": [
+      "Fiction > Thrillers & Suspense > Psychological",
+      "Fiction > Thrillers & Suspense > Domestic"
+     ]
+    },
+    "en": {
+     "titel": "The House Never Lies",
+     "ondertitel": "A psychological thriller",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Eight months after his wife's fatal fall, Daniel Vos is barely holding on. Then the insurance company sends him the smart-home data from that night. One line doesn't add up: the front door opened at 3:12 a.m. While he was asleep. While Marit lay at the bottom of the stairs.",
+      "The police reopen the case – and Daniel is suspect number one. Every layer he peels back reveals a new lie: Marit wasn't who she said she was. And someone in the quiet, familiar neighborhood has known for a long time.",
+      "The house recorded everything. But whoever can erase the logs can also wait – and has been watching far longer than Daniel thinks."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/het-huis-weet-het/tools/gen_wrap.py (LANGS['en']['blurb'] = gedrukte achterflap)",
+     "paginas_paperback": null,
+     "paginas_hardcover": 320,
+     "isbn_paperback": "979-8186719328",
+     "isbn_hardcover": "979-8171954444",
+     "asin_ebook": "B0H8FWH2KZ",
+     "asin_paperback": "B0H8FQ1ZHG",
+     "asin_hardcover": "B0HHTDHH7Y",
+     "verschenen": "2026-07-10",
+     "woorden": 86761,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": null,
+     "categorieen": [
+      "Fiction > Thrillers & Suspense > Psychological",
+      "Fiction > Thrillers & Suspense > Domestic"
+     ]
+    },
+    "de": {
+     "titel": "Das Haus sieht alles",
+     "ondertitel": "Ein Psychothriller",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Acht Monate nach dem tödlichen Sturz seiner Frau versucht Daniel Vos, sich über Wasser zu halten. Dann schickt ihm die Versicherung die Smart-Home-Daten jener Nacht. Eine Zeile stimmt nicht: Die Haustür öffnete sich um 3:12 Uhr. Während er schlief. Während Marit am Fuß der Treppe lag.",
+      "Die Polizei nimmt den Fall wieder auf – und Daniel ist der erste Verdächtige. Jede Schicht, die er abträgt, legt eine neue Lüge frei: Marit war nicht die, für die sie sich ausgab. Und jemand in der vertrauten Nachbarschaft wusste das längst.",
+      "Das Haus zeichnete alles auf. Aber wer die Protokolle löschen kann, kann auch warten – und schaut schon viel länger zu, als Daniel ahnt."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/het-huis-weet-het/tools/gen_wrap.py (LANGS['de']['blurb'] = gedrukte achterflap)",
+     "paginas_paperback": null,
+     "paginas_hardcover": 332,
+     "isbn_paperback": "979-8186716969",
+     "isbn_hardcover": "979-8171955885",
+     "asin_ebook": "B0H8FT79DZ",
+     "asin_paperback": "B0H8FGMS4L",
+     "asin_hardcover": "B0HHTHTV74",
+     "verschenen": "2026-07-10",
+     "woorden": 85296,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": null,
+     "categorieen": [
+      "Mysterie, thriller & spanning > Thrillers > Psychologisch",
+      "Misdaad"
+     ]
+    },
+    "es": {
+     "titel": "La Casa Lo Ve Todo",
+     "ondertitel": "Un thriller psicológico",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Ocho meses después de la caída mortal de su esposa, Daniel Vos apenas se mantiene a flote. Entonces el seguro le envía los datos del smart-home de esa noche. Una línea no cuadra: la puerta de la calle se abrió a las 3:12. Mientras él dormía. Mientras Marit yacía al pie de la escalera.",
+      "La policía reabre el caso – y Daniel es el primer sospechoso. Cada capa que arranca destapa una nueva mentira: Marit no era quien decía ser. Y alguien en el vecindario tranquilo y familiar lo sabía desde hace tiempo.",
+      "La casa lo registraba todo. Pero quien puede borrar los registros, también puede esperar – y lleva vigilando mucho más tiempo del que Daniel cree."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/het-huis-weet-het/publicatie/metadata-es.md (## Beschrijving (productpagina))",
+     "paginas_paperback": 402,
+     "paginas_hardcover": 322,
+     "isbn_paperback": null,
+     "isbn_hardcover": "979-8171956776",
+     "asin_ebook": "B0H8J74H4D",
+     "asin_paperback": "B0H8JH6HP2",
+     "asin_hardcover": "B0HHT6GH2G",
+     "verschenen": "2026-07-11",
+     "woorden": 88915,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": [
+      "thriller psicológico en español",
+      "suspense doméstico secretos familiares",
+      "thriller casa inteligente domótica",
+      "novela negra giro inesperado",
+      "marido sospechoso de asesinato",
+      "secreto familiar pasado giro argumental",
+      "novela de suspense adictiva pageturner"
+     ],
+     "categorieen": [
+      "Suspense psicológico",
+      "Género negro / crimen"
+     ]
+    }
+   }
+  },
+  {
+   "n": 2,
+   "slug": "de-vrijgave",
+   "auteur": "C.M.R. Thorne",
+   "bron": [
+    "/Users/skillbuilder/Boeken/de-vrijgave/publicatie/metadata-nl.md",
+    "/Users/skillbuilder/Boeken/de-vrijgave/publicatie/metadata-en.md",
+    "/Users/skillbuilder/Boeken/de-vrijgave/publicatie/metadata-de.md",
+    "/Users/skillbuilder/Boeken/de-vrijgave/publicatie/metadata-es.md",
+    "/Users/skillbuilder/Boeken/de-vrijgave/publicatie/upload-log.md",
+    "/Users/skillbuilder/Boeken/de-vrijgave/publicatie/cvdm/VERZONDEN-BEWIJS.md",
+    "/Users/skillbuilder/Boeken/de-vrijgave/VOORTGANG.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/publicatie/HARDCOVERS-2026-09-04.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/publicatie/KANALEN-EN-RECENSIES-2026-10-31.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/publicatie/VERVANGINGSREGISTER.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/tools/isbn.py",
+    "/Users/skillbuilder/Boeken/uitgeverij/tools/reeks.py",
+    "/Users/skillbuilder/Boeken/reeks/prijzen.md",
+    "/Users/skillbuilder/Boeken/website/boeken.json"
+   ],
+   "ed": {
+    "nl": {
+     "titel": "De Vrijgave",
+     "ondertitel": "Een thriller",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Vijf mijnwerkers komen om als een galerij instort. De officiële lezing: een natuurramp die niemand had kunnen zien aankomen.",
+      "Dan krijgt veiligheidskundige Simon Kessler het vrijgavedocument van die ochtend onder ogen – met zijn eigen handtekening eronder. Alleen: hij heeft het nooit getekend. En het is gemaakt ná de instorting.",
+      "Terwijl Simon uitzoekt wie zijn naam vervalste, komt een zaak boven die hij acht jaar geleden begroef. Iedereen in het dorp had een reden om te zwijgen. Ook hij.",
+      "Een psychologische thriller over cijfers die niet liegen, mensen die dat wél doen, en de prijs van één handtekening. Voor lezers van Harlan Coben en Saskia Noort."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/de-vrijgave/publicatie/metadata-nl.md (beschrijving/flaptekst-blok)",
+     "paginas_paperback": 442,
+     "paginas_hardcover": 337,
+     "isbn_paperback": "979-8192816349",
+     "isbn_hardcover": null,
+     "asin_ebook": "B0H1K9QBND",
+     "asin_paperback": "B0HFFVDRX4",
+     "asin_hardcover": null,
+     "verschenen": "2026-08-10",
+     "woorden": 97394,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": [
+      "psychologische thriller nederlands",
+      "spanningsroman nederlandstalig",
+      "mijnramp verzwegen waarheid",
+      "klokkenluider bedrijf doofpot",
+      "twist onverwacht einde",
+      "veiligheidskundige onderzoek",
+      "literaire thriller spanning"
+     ],
+     "categorieen": [
+      "Fictie > Mysterie, thriller & suspense > Thrillers > Psychologisch",
+      "Fictie > Mysterie, thriller & suspense > Misdaad"
+     ]
+    },
+    "en": {
+     "titel": "The Release",
+     "ondertitel": "A Thriller",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Five miners die when a gallery collapses. The official version: a natural disaster no one could have seen coming.",
+      "Then safety consultant Simon Kessler is shown the release document from that morning – with his own signature on it. Except he never signed it. And it was created after the collapse.",
+      "As Simon hunts down who forged his name, a case surfaces that he buried eight years ago. Everyone in the village had a reason to stay silent. So did he.",
+      "A psychological thriller about numbers that don't lie, people who do, and the price of a single signature. For readers of Harlan Coben and Tana French."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/de-vrijgave/publicatie/metadata-en.md (beschrijving/flaptekst-blok)",
+     "paginas_paperback": 442,
+     "paginas_hardcover": 342,
+     "isbn_paperback": null,
+     "isbn_hardcover": "979-8171951818",
+     "asin_ebook": "B0HFD4S7DN",
+     "asin_paperback": "B0HHSSMFYS",
+     "asin_hardcover": "B0HHTW71WM",
+     "verschenen": "2026-08-15",
+     "woorden": 99618,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": [
+      "psychological thriller",
+      "mine disaster cover up",
+      "whistleblower corporate conspiracy",
+      "twist ending suspense",
+      "small town secrets",
+      "forensic investigation mystery",
+      "slow burn literary thriller"
+     ],
+     "categorieen": [
+      "Fiction > Thrillers & Suspense > Psychological",
+      "Fiction > Mystery & Detective > International Crime & Mystery"
+     ]
+    },
+    "de": {
+     "titel": "Die Freigabe",
+     "ondertitel": "Ein Thriller",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Fünf Bergleute sterben, als ein Stollen einstürzt. Die offizielle Version: eine Naturkatastrophe, die niemand hätte kommen sehen.",
+      "Dann bekommt Sicherheitsberater Simon Kessler das Freigabedokument von jenem Morgen zu Gesicht – mit seiner eigenen Unterschrift. Nur: Er hat es nie unterschrieben. Und es wurde nach dem Einsturz erstellt.",
+      "Während Simon herausfindet, wer seinen Namen gefälscht hat, taucht ein Fall auf, den er vor acht Jahren begraben hat. Jeder im Dorf hatte einen Grund zu schweigen. Auch er.",
+      "Ein Psychothriller über Zahlen, die nicht lügen, Menschen, die es tun, und den Preis einer einzigen Unterschrift."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/de-vrijgave/publicatie/metadata-de.md (beschrijving/flaptekst-blok)",
+     "paginas_paperback": 478,
+     "paginas_hardcover": 376,
+     "isbn_paperback": null,
+     "isbn_hardcover": "979-8171952754",
+     "asin_ebook": "B0HFD4R1CR",
+     "asin_paperback": "B0HHTFNBJT",
+     "asin_hardcover": "B0HHTKSKBZ",
+     "verschenen": "2026-08-15",
+     "woorden": null,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": [
+      "psychothriller deutsch",
+      "bergwerk unglück vertuschung",
+      "whistleblower konzern verschwörung",
+      "spannung überraschendes ende",
+      "dorf geheimnisse thriller",
+      "ermittlung spurensuche",
+      "literarischer spannungsroman"
+     ],
+     "categorieen": [
+      "Belletristik > Krimi & Thriller > Thriller > Psychothriller",
+      "Belletristik > Krimi & Thriller > Krimi"
+     ]
+    },
+    "es": {
+     "titel": "El Visto Bueno",
+     "ondertitel": "Un thriller psicológico",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Cinco mineros mueren cuando se derrumba una galería. La versión oficial: una catástrofe natural que nadie podría haber previsto.",
+      "Entonces el consultor de seguridad Simon Kessler ve el documento de autorización de aquella mañana – con su propia firma. Solo que él nunca lo firmó. Y se creó después del derrumbe.",
+      "Mientras Simon averigua quién falsificó su nombre, sale a la luz un caso que enterró hace ocho años. Todos en el pueblo tenían un motivo para callar. Él también.",
+      "Un thriller psicológico sobre cifras que no mienten, personas que sí lo hacen, y el precio de una sola firma."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/de-vrijgave/publicatie/metadata-es.md (beschrijving/flaptekst-blok)",
+     "paginas_paperback": 460,
+     "paginas_hardcover": 348,
+     "isbn_paperback": null,
+     "isbn_hardcover": "979-8171953584",
+     "asin_ebook": "B0HFD2CBMW",
+     "asin_paperback": "B0HHSTHXY4",
+     "asin_hardcover": "B0HHTKV4GV",
+     "verschenen": "2026-08-15",
+     "woorden": null,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": [
+      "thriller psicológico",
+      "mina accidente encubrimiento",
+      "denunciante conspiración empresa",
+      "giro final inesperado",
+      "secretos de un pueblo",
+      "investigación forense",
+      "novela de suspense literaria"
+     ],
+     "categorieen": [
+      "Ficción > Misterio, thriller y suspense > Thrillers > Psicológico",
+      "Ficción > Misterio, thriller y suspense > Crimen"
+     ]
+    }
+   }
+  },
+  {
+   "n": 3,
+   "slug": "polsslag",
+   "auteur": "C.M.R. Thorne",
+   "bron": [
+    "/Users/skillbuilder/Boeken/polsslag/publicatie/BLURB-NL.md",
+    "/Users/skillbuilder/Boeken/polsslag/publicatie/BLURB-EN.md",
+    "/Users/skillbuilder/Boeken/polsslag/publicatie/BLURB-DE.md",
+    "/Users/skillbuilder/Boeken/polsslag/publicatie/BLURB-ES.md",
+    "/Users/skillbuilder/Boeken/polsslag/publicatie/metadata-en.md",
+    "/Users/skillbuilder/Boeken/polsslag/publicatie/metadata-de.md",
+    "/Users/skillbuilder/Boeken/polsslag/publicatie/metadata-es.md",
+    "/Users/skillbuilder/Boeken/polsslag/publicatie/upload-log.md",
+    "/Users/skillbuilder/Boeken/polsslag/publicatie/cvdm/VERZONDEN-BEWIJS.md",
+    "/Users/skillbuilder/Boeken/polsslag/VOORTGANG.md",
+    "/Users/skillbuilder/Boeken/polsslag/VERTAALSTATUS.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/publicatie/HARDCOVERS-2026-09-04.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/publicatie/KANALEN-EN-RECENSIES-2026-10-31.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/tools/isbn.py",
+    "/Users/skillbuilder/Boeken/uitgeverij/tools/reeks.py",
+    "/Users/skillbuilder/Boeken/reeks/prijzen.md",
+    "/Users/skillbuilder/Boeken/website/boeken.json"
+   ],
+   "ed": {
+    "nl": {
+     "titel": "Polsslag",
+     "ondertitel": "Een thriller",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Iris Havik kent de harten van haar dorp beter dan hun gezichten. Als hartrevalidatie-fysio in Duinhoef leest ze elke ochtend de gegevens van de mensen die naast haar lopen: hun rust, hun herstel, hun slechte nachten. Ze weet wie er te hard van start gaat en wie er iets verzwijgt.",
+      "Op een donderdagochtend in oktober vinden ze Bram Selier dood in de duinen. Zijn horloge heeft alles keurig opgeschreven: de laatste loop, de hartslag die om twaalf over zes stopt. Een nette dood, zeggen ze. Het hele dorp gelooft het.",
+      "Iris niet. Het hart in die grafiek klopt niet als dat van Bram.",
+      "Heeft iemand met de gegevens geknoeid? Droeg hij die ochtend wel zijn eigen horloge? Ze is de enige in Duinhoef die de vraag kan stellen – en langzaam begint ze te begrijpen wat het haar gaat kosten om hem hardop te stellen.",
+      "Sommige harten liegen niet. Mensen wel."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/polsslag/publicatie/BLURB-NL.md (tekst na de ---scheiding)",
+     "paginas_paperback": 375,
+     "paginas_hardcover": 290,
+     "isbn_paperback": "979-8171884536",
+     "isbn_hardcover": null,
+     "asin_ebook": "B0HHRZVDYL",
+     "asin_paperback": "B0HL23GQSH",
+     "asin_hardcover": null,
+     "verschenen": "2026-09-04",
+     "woorden": 87378,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": null,
+     "categorieen": [
+      "Literatuur & fictie > Genrefictie > Psychologisch",
+      "Literatuur & fictie > Genrefictie > Kleine stad en platteland"
+     ]
+    },
+    "en": {
+     "titel": "Twelve Past Six",
+     "ondertitel": "A Thriller",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Iris Havik knows the hearts of her village better than their faces. In Duinhoef, on the Dutch coast, people know their resting heart rate to the beat – and not their neighbor's name. As the village's cardiac rehab therapist, Iris reads the people who run beside her every morning: recovery, bad nights, who starts too fast, who's hiding something.",
+      "On a Thursday morning in October, Bram Selier is found dead in the dunes. His watch has written it all down, nice and neat: the final run, the heartbeat that stops at twelve past six. A tidy death, they say. The whole village believes it.",
+      "Iris doesn't. The heart in that graph doesn't beat like Bram's. Did someone tamper with the data? Was he even wearing his own watch that morning? She's the only one who can ask those questions – and she's starting to understand what asking them out loud will cost her.",
+      "Some hearts don't lie. People do."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/polsslag/publicatie/BLURB-EN.md (tekst na de ---scheiding)",
+     "paginas_paperback": 371,
+     "paginas_hardcover": 287,
+     "isbn_paperback": "979-8171856984",
+     "isbn_hardcover": "979-8171943141",
+     "asin_ebook": "B0HHRKL657",
+     "asin_paperback": "B0HHSFJX9V",
+     "asin_hardcover": "B0HHX65P1C",
+     "verschenen": "2026-09-04",
+     "woorden": 86550,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": [
+      "psychological thriller",
+      "smartwatch heart rate mystery",
+      "small town secrets thriller",
+      "dutch coast crime novel",
+      "twist ending suspense",
+      "female protagonist thriller",
+      "slow burn literary thriller"
+     ],
+     "categorieen": [
+      "Literature & Fiction > Genre Fiction > Psychological",
+      "Literature & Fiction > Genre Fiction > Small Town & Rural"
+     ]
+    },
+    "de": {
+     "titel": "Das Herz lügt nie",
+     "ondertitel": "Ein Thriller",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Iris Havik kennt die Herzen ihres Dorfes besser als deren Gesichter. In Duinhoef an der holländischen Küste kennen die Leute ihren Ruhepuls auf den Schlag genau – und ihren Nachbarn nicht beim Namen. Iris bringt ihnen nach dem Infarkt das Laufen zurück. Jeden Morgen liest sie, was die Uhren ihrer Läufer aufschreiben: die Erholung, die schlechten Nächte, wer zu schnell losgeht, wer etwas verschweigt.",
+      "An einem Donnerstagmorgen im Oktober finden sie Bram Selier tot in den Dünen. Seine Uhr hat alles sauber aufgeschrieben: den letzten Lauf, den Puls, der um 6:12 Uhr stehen bleibt. Ein sauberer Tod, sagen alle. Das ganze Dorf glaubt es.",
+      "Iris nicht. Das Herz in dieser Kurve schlägt nicht wie das von Bram. Hat jemand an den Daten gedreht? Trug er an diesem Morgen überhaupt seine eigene Uhr? Nur Iris kann diese Fragen stellen – und sie begreift langsam, was es sie kosten wird, sie laut zu stellen.",
+      "Das Herz lügt nie. Der Mensch schon."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/polsslag/publicatie/BLURB-DE.md (tekst na de ---scheiding)",
+     "paginas_paperback": 403,
+     "paginas_hardcover": 316,
+     "isbn_paperback": null,
+     "isbn_hardcover": "979-8171947507",
+     "asin_ebook": "B0HHRNKZWG",
+     "asin_paperback": "B0HHSFDPSQ",
+     "asin_hardcover": "B0HHTL51R6",
+     "verschenen": "2026-09-04",
+     "woorden": 85736,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": [
+      "psychothriller",
+      "smartwatch herzfrequenz raetsel",
+      "kleinstadt geheimnisse",
+      "niederlaendische kueste krimi",
+      "spannung mit wendung",
+      "thriller weibliche hauptfigur",
+      "dorf thriller spannung"
+     ],
+     "categorieen": [
+      "Krimi & Thriller > Thriller > Psychothriller",
+      "Krimi & Thriller > Krimi"
+     ]
+    },
+    "es": {
+     "titel": "La letra del corazón",
+     "ondertitel": "Un thriller psicológico",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Iris Havik conoce los corazones de su pueblo mejor que sus rostros. En Duinhoef, un pueblo de la costa holandesa, la gente conoce su frecuencia cardíaca latido a latido y a su vecino ni de nombre. Iris es su fisioterapeuta cardíaca: cada mañana lee los datos de quienes corren a su lado —la recuperación, las malas noches—, y sabe quién sale demasiado fuerte y quién calla algo.",
+      "Un jueves de octubre, Bram Selier aparece muerto en las dunas. Su reloj lo ha apuntado todo con letra clara: la última carrera, el pulso que se detiene a las seis y doce de la mañana. Una muerte limpia, dicen. El pueblo entero se lo cree.",
+      "Iris no. Un corazón tiene una letra, y la letra de esa curva no se parece a la de Bram. ¿Ha manipulado alguien los datos? ¿Llevaba puesto su propio reloj aquella mañana? Es la única que puede hacer esas preguntas. Y poco a poco empieza a entender lo que le va a costar hacerlas en voz alta.",
+      "Hay corazones que no mienten. La gente, sí."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/polsslag/publicatie/BLURB-ES.md (tekst na de ---scheiding)",
+     "paginas_paperback": 382,
+     "paginas_hardcover": 295,
+     "isbn_paperback": null,
+     "isbn_hardcover": "979-8171949273",
+     "asin_ebook": "B0HHRL5RBP",
+     "asin_paperback": "B0HHSD2Y6B",
+     "asin_hardcover": "B0HHTGF7Q3",
+     "verschenen": "2026-09-04",
+     "woorden": 88230,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": [
+      "thriller psicologico",
+      "misterio pulsera de actividad",
+      "secretos de pueblo pequeno",
+      "novela negra costa holandesa",
+      "suspense con giro final",
+      "protagonista femenina thriller",
+      "intriga literaria lenta"
+     ],
+     "categorieen": [
+      "Policíaca, negra y suspense > Novela negra y suspense > Ámbito psicológico",
+      "Policíaca, negra y suspense > Crímenes"
+     ]
+    }
+   }
+  },
+  {
+   "n": 4,
+   "slug": "boek4-dna",
+   "auteur": "C.M.R. Thorne",
+   "bron": [
+    "/Users/skillbuilder/Boeken/boek4-dna/publicatie/METADATA-NL.md",
+    "/Users/skillbuilder/Boeken/boek4-dna/tools/gen_epub.py",
+    "/Users/skillbuilder/Boeken/boek4-dna/CONTINUITEIT-ADDENDUM.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/publicatie/KANALEN-EN-RECENSIES-2026-10-31.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/publicatie/KDP-TITEL-IDS.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/tools/isbn.py",
+    "/Users/skillbuilder/Boeken/uitgeverij/tools/reeks.py",
+    "/Users/skillbuilder/Boeken/reeks/prijzen.md",
+    "/Users/skillbuilder/Boeken/website/boeken.json",
+    "/Users/skillbuilder/Boeken/STATUS-WINKELS.md"
+   ],
+   "ed": {
+    "nl": {
+     "titel": "De Stille Helft",
+     "ondertitel": "Een psychologische thriller",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Als haar nichtje met de kerst DNA-kits voor de hele familie bestelt, leest de familie-app op een dinsdagavond hardop voor wat verloskundige Judith Meerman al vierentwintig jaar weet: de jongen aan haar keukentafel is niet de jongen die zij ter wereld bracht. Elf dagen later valt de enige vrouw die het kan uitleggen dood in de sluiskolk, een dag nadat ze zeven woorden op Judiths voicemail heeft ingesproken. Judith bracht het halve dorp ter wereld en weet van zevenhonderd kinderen precies hoe laat ze geboren zijn. Van haar eigen twee weet ze het niet. Een psychologische thriller over een vraag die vierentwintig jaar niet is gesteld, en over wat het kost om hem alsnog hardop te stellen."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/boek4-dna/publicatie/METADATA-NL.md (## Flaptekst)",
+     "paginas_paperback": 420,
+     "paginas_hardcover": null,
+     "isbn_paperback": "979-8174873087",
+     "isbn_hardcover": null,
+     "asin_ebook": "B0HL5XHMSF",
+     "asin_paperback": "B0HKGKJR62",
+     "asin_hardcover": null,
+     "verschenen": null,
+     "woorden": 94116,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": [
+      "dna test familiegeheim",
+      "psychologische thriller nederlands",
+      "verwisseld bij de geboorte",
+      "verloskundige spanning",
+      "dorpsthriller nederland",
+      "familiegeheimen ontrafeld",
+      "spannend boek nederlandstalig"
+     ],
+     "categorieen": [
+      "FICTION / Thrillers / Psychological",
+      "FICTION / Thrillers / Domestic"
+     ]
+    },
+    "en": {
+     "titel": "The Quiet Half",
+     "ondertitel": "A thriller",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "When her niece orders DNA kits for the whole family at Christmas, the family group chat spends one Tuesday evening reading out loud what midwife Judith Meerman has known for twenty-four years: the boy at her kitchen table is not the boy she gave birth to. Eleven days later the only woman who can explain it is found dead in the lock basin, a day after leaving seven words on Judith's voicemail. Judith delivered half the village and can tell you the exact minute seven hundred children were born. Her own two are the ones she cannot. A psychological thriller about a question left unasked for twenty-four years, and what it costs to finally ask it out loud."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/boek4-dna/tools/gen_epub.py (LANGS['en']['desc'] = EPUB-/winkelbeschrijving)",
+     "paginas_paperback": null,
+     "paginas_hardcover": null,
+     "isbn_paperback": null,
+     "isbn_hardcover": null,
+     "asin_ebook": "B0HL5SMV4N",
+     "asin_paperback": null,
+     "asin_hardcover": null,
+     "verschenen": null,
+     "woorden": null,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": null,
+     "categorieen": null
+    },
+    "de": {
+     "titel": "Die stille Hälfte",
+     "ondertitel": "Ein Thriller",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Als ihre Nichte zu Weihnachten DNA-Tests für die ganze Familie bestellt, liest der Familienchat an einem Dienstagabend laut vor, was die Hebamme Judith Meerman seit vierundzwanzig Jahren weiß: Der Junge an ihrem Küchentisch ist nicht der Junge, den sie zur Welt gebracht hat. Elf Tage später liegt die einzige Frau, die es erklären könnte, tot in der Schleusenkammer, einen Tag nachdem sie Judith sieben Worte auf die Mailbox gesprochen hat. Judith hat das halbe Dorf zur Welt gebracht und kennt von siebenhundert Kindern die genaue Geburtsminute. Von ihren eigenen zwei kennt sie sie nicht. Ein psychologischer Thriller über eine Frage, die vierundzwanzig Jahre lang niemand gestellt hat, und darüber, was es kostet, sie endlich auszusprechen."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/boek4-dna/tools/gen_epub.py (LANGS['de']['desc'] = EPUB-/winkelbeschrijving)",
+     "paginas_paperback": null,
+     "paginas_hardcover": null,
+     "isbn_paperback": null,
+     "isbn_hardcover": null,
+     "asin_ebook": "B0HL5QJB6Q",
+     "asin_paperback": null,
+     "asin_hardcover": null,
+     "verschenen": null,
+     "woorden": null,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": null,
+     "categorieen": null
+    },
+    "es": {
+     "titel": "La mitad silenciada",
+     "ondertitel": "Un thriller psicológico",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Cuando su sobrina regala kits de ADN a toda la familia por Navidad, el grupo familiar se pasa un martes por la noche leyendo en voz alta lo que la comadrona Judith Meerman sabe desde hace veinticuatro años: el chico sentado a su mesa no es el chico al que ella dio a luz. Once días después, la única mujer que podría explicarlo aparece muerta en la esclusa, un día después de dejarle siete palabras en el contestador. Judith ha traído al mundo a medio pueblo y sabe la hora exacta en que nacieron setecientos niños. De los suyos, no. Un thriller psicológico sobre una pregunta que nadie hizo durante veinticuatro años y sobre lo que cuesta formularla por fin en voz alta."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/boek4-dna/tools/gen_epub.py (LANGS['es']['desc'] = EPUB-/winkelbeschrijving)",
+     "paginas_paperback": null,
+     "paginas_hardcover": null,
+     "isbn_paperback": null,
+     "isbn_hardcover": null,
+     "asin_ebook": "B0HL67858S",
+     "asin_paperback": null,
+     "asin_hardcover": null,
+     "verschenen": null,
+     "woorden": null,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": null,
+     "categorieen": null
+    }
+   }
+  },
+  {
+   "n": 5,
+   "slug": "boek5-ev",
+   "auteur": "C.M.R. Thorne",
+   "bron": [
+    "/Users/skillbuilder/Boeken/boek5-ev/publicatie/ACHTERFLAP-NL.md",
+    "/Users/skillbuilder/Boeken/boek5-ev/publicatie/ACHTERFLAP-EN.md",
+    "/Users/skillbuilder/Boeken/boek5-ev/publicatie/ACHTERFLAP-DE.md",
+    "/Users/skillbuilder/Boeken/boek5-ev/publicatie/ACHTERFLAP-ES.md",
+    "/Users/skillbuilder/Boeken/boek5-ev/publicatie/METADATA-NL.md",
+    "/Users/skillbuilder/Boeken/boek5-ev/publicatie/METADATA-EN.md",
+    "/Users/skillbuilder/Boeken/boek5-ev/publicatie/METADATA-DE.md",
+    "/Users/skillbuilder/Boeken/boek5-ev/publicatie/METADATA-ES.md",
+    "/Users/skillbuilder/Boeken/boek5-ev/publicatie/upload-log.md",
+    "/Users/skillbuilder/Boeken/boek5-ev/VERTAALSTATUS.md",
+    "/Users/skillbuilder/Boeken/boek5-ev/PROBATOR-RAPPORT.md",
+    "/Users/skillbuilder/Boeken/STATUS-BOEK5-PUBLICATIE.md",
+    "/Users/skillbuilder/Boeken/WERKLIJST.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/publicatie/KANALEN-EN-RECENSIES-2026-10-31.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/tools/isbn.py",
+    "/Users/skillbuilder/Boeken/uitgeverij/tools/reeks.py",
+    "/Users/skillbuilder/Boeken/reeks/prijzen.md"
+   ],
+   "ed": {
+    "nl": {
+     "titel": "Beeldmateriaal",
+     "ondertitel": "Een thriller",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Marten Groenewoud heeft in vijfentwintig jaar veertienhonderd mensen in zijn dorp leren rijden. Hij weet van iedereen hoe ze remmen, hoe ze kijken en waar ze dat niet doen. Als een advocaat hem inhuurt om oud dashcambeeld te verzamelen van de kruising waar in juni een meisje van vijftien is geschept, is het gewoon werk. Een stapel filmpjes, een formulier, een handtekening eronder.",
+      "In die stapel zit een fragment dat al acht jaar openbaar in de dorpsapp staat. Vierhonderd mensen hebben het gezien. Ze hebben erom gelachen en zijn doorgescrold, want het gaat over een hufter zonder licht. Niemand heeft gekeken naar wat er achterin beeld hangt. Het bewijst dat het uur waarop het onderzoek naar de dood van Niek Veldkamp is gebouwd, het verkeerde uur was.",
+      "\"Er is niks gebeurd\" is een zin die je alleen zegt als er iets gebeurd is."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/boek5-ev/publicatie/ACHTERFLAP-NL.md (tekst na de ---scheiding)",
+     "paginas_paperback": 435,
+     "paginas_hardcover": 349,
+     "isbn_paperback": "979-8160819747",
+     "isbn_hardcover": "979-8161030738",
+     "asin_ebook": "B0HM8CM6NR",
+     "asin_paperback": "B0HMNVM3HH",
+     "asin_hardcover": null,
+     "verschenen": null,
+     "woorden": 102583,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": [
+      "psychologische thriller",
+      "dashcam bewijs",
+      "dorpsgeheim thriller",
+      "onopgeloste zaak",
+      "nederlandse thriller",
+      "verrassend slot",
+      "verkeersongeval onderzoek"
+     ],
+     "categorieen": [
+      "FICTION / Thrillers / Psychological",
+      "FICTION / Thrillers / Suspense",
+      "FICTION / Mystery & Detective / International Crime & Mystery"
+     ]
+    },
+    "en": {
+     "titel": "The Footage",
+     "ondertitel": "A Thriller",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "In twenty-five years, Marten Groenewoud has taught fourteen hundred people in his village how to drive. He knows how every one of them brakes, where they look and where they don't. When a lawyer hires him to collect old dashcam footage of the intersection where a fifteen-year-old girl was hit in June, it's just work. A stack of clips, a form, a signature at the bottom.",
+      "In that stack is a clip that has been sitting in the village group, in plain sight, for eight years. Four hundred people have watched it. They laughed and kept scrolling, because it's about some jerk driving with no lights on. Nobody looked at what's hanging in the background of the frame. It proves the investigation into Niek Veldkamp's death was built on the wrong hour.",
+      "\"Nothing happened\" is a thing you only say when something did."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/boek5-ev/publicatie/ACHTERFLAP-EN.md (tekst na de ---scheiding)",
+     "paginas_paperback": 438,
+     "paginas_hardcover": null,
+     "isbn_paperback": "979-8160921716",
+     "isbn_hardcover": "979-8161007341",
+     "asin_ebook": "B0HMB5Z9V6",
+     "asin_paperback": null,
+     "asin_hardcover": null,
+     "verschenen": null,
+     "woorden": 102991,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": [
+      "psychological thriller",
+      "dashcam footage mystery",
+      "small town secrets thriller",
+      "cold case unsolved death",
+      "dutch village crime novel",
+      "twist ending suspense",
+      "hidden video evidence"
+     ],
+     "categorieen": [
+      "Literature & Fiction > Genre Fiction > Psychological",
+      "Literature & Fiction > Genre Fiction > Small Town & Rural"
+     ]
+    },
+    "de": {
+     "titel": "Bildmaterial",
+     "ondertitel": "Ein Thriller",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Marten Groenewoud hat in fünfundzwanzig Jahren vierzehnhundert Menschen in seinem Dorf das Autofahren beigebracht. Er weiß von jedem, wie er bremst, wohin er schaut und wohin nicht. Als eine Anwältin ihn beauftragt, altes Dashcam-Material von der Kreuzung zusammenzutragen, an der im Juni ein fünfzehnjähriges Mädchen erfasst wurde, ist das nur ein Auftrag. Ein Stapel Clips, ein Formular, eine Unterschrift darunter.",
+      "In diesem Stapel steckt ein Clip, der seit acht Jahren öffentlich in der Dorfgruppe steht. Vierhundert Menschen haben ihn gesehen. Sie haben gelacht und weitergescrollt, denn da fährt bloß einer ohne Licht. Niemand hat je auf das geachtet, was im Hintergrund des Bildes hängt. Es beweist: Die Ermittlungen zum Tod von Niek Veldkamp beruhen auf der falschen Uhrzeit.",
+      "„Es ist nichts passiert“ ist ein Satz, den man nur sagt, wenn etwas passiert ist."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/boek5-ev/publicatie/ACHTERFLAP-DE.md (tekst na de ---scheiding)",
+     "paginas_paperback": 475,
+     "paginas_hardcover": 358,
+     "isbn_paperback": "979-8161835258",
+     "isbn_hardcover": null,
+     "asin_ebook": null,
+     "asin_paperback": null,
+     "asin_hardcover": null,
+     "verschenen": null,
+     "woorden": 99129,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": [
+      "psychothriller",
+      "dashcam thriller",
+      "dorfgeheimnisse thriller",
+      "cold case ungeloester todesfall",
+      "niederlaendisches dorf krimi",
+      "spannung mit wendung",
+      "fahrlehrer thriller"
+     ],
+     "categorieen": [
+      "Krimi & Thriller > Thriller > Psychothriller",
+      "Krimi & Thriller > Krimi"
+     ]
+    },
+    "es": {
+     "titel": "La grabación",
+     "ondertitel": "Un thriller psicológico",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "En veinticinco años, Marten Groenewoud ha enseñado a conducir a mil cuatrocientas personas de su pueblo. Sabe cómo frena cada uno, hacia dónde mira y hacia dónde no. Cuando una abogada lo contrata para reunir viejas imágenes de dashcam del cruce donde en junio atropellaron a una chica de quince años, es solo un encargo. Un montón de clips, un formulario, una firma al pie.",
+      "En ese montón hay un clip que lleva ocho años a la vista de todos en el grupo del pueblo. Cuatrocientas personas lo han visto. Se rieron y siguieron bajando, porque va de un imbécil que circula sin luces. Nadie ha mirado lo que cuelga al fondo de la imagen. Demuestra que la hora sobre la que se construyó la investigación de la muerte de Niek Veldkamp era la equivocada.",
+      "«No ha pasado nada» es una frase que solo se dice cuando algo ha pasado."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/boek5-ev/publicatie/ACHTERFLAP-ES.md (tekst na de ---scheiding)",
+     "paginas_paperback": 445,
+     "paginas_hardcover": 348,
+     "isbn_paperback": null,
+     "isbn_hardcover": null,
+     "asin_ebook": null,
+     "asin_paperback": null,
+     "asin_hardcover": null,
+     "verschenen": null,
+     "woorden": 102688,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": [
+      "thriller psicologico",
+      "misterio grabacion dashcam",
+      "secretos de pueblo pequeno",
+      "caso sin resolver muerte",
+      "novela negra pueblo holandes",
+      "suspense con giro final",
+      "thriller profesor autoescuela"
+     ],
+     "categorieen": [
+      "Policíaca, negra y suspense > Novela negra y suspense > Ámbito psicológico",
+      "Policíaca, negra y suspense > Crímenes"
+     ]
+    }
+   }
+  },
+  {
+   "n": 6,
+   "slug": "boek6-deurbel",
+   "auteur": "C.M.R. Thorne",
+   "bron": [
+    "/Users/skillbuilder/Boeken/boek6-deurbel/publicatie/ACHTERFLAP-NL.md",
+    "/Users/skillbuilder/Boeken/boek6-deurbel/publicatie/ACHTERFLAP-EN.md",
+    "/Users/skillbuilder/Boeken/boek6-deurbel/publicatie/ACHTERFLAP-DE.md",
+    "/Users/skillbuilder/Boeken/boek6-deurbel/publicatie/ACHTERFLAP-ES.md",
+    "/Users/skillbuilder/Boeken/boek6-deurbel/publicatie/METADATA-NL.md",
+    "/Users/skillbuilder/Boeken/boek6-deurbel/publicatie/METADATA-EN.md",
+    "/Users/skillbuilder/Boeken/boek6-deurbel/publicatie/METADATA-DE.md",
+    "/Users/skillbuilder/Boeken/boek6-deurbel/publicatie/METADATA-ES.md",
+    "/Users/skillbuilder/Boeken/boek6-deurbel/publicatie/upload-log.md",
+    "/Users/skillbuilder/Boeken/boek6-deurbel/VOORTGANG.md",
+    "/Users/skillbuilder/Boeken/boek6-deurbel/VERTAALSTATUS.md",
+    "/Users/skillbuilder/Boeken/WERKLIJST.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/publicatie/KANALEN-EN-RECENSIES-2026-10-31.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/publicatie/KDP-TITEL-IDS.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/tools/isbn.py",
+    "/Users/skillbuilder/Boeken/uitgeverij/tools/reeks.py",
+    "/Users/skillbuilder/Boeken/reeks/prijzen.md",
+    "/Users/skillbuilder/Boeken/dashboard/scraper/b6_data.json"
+   ],
+   "ed": {
+    "nl": {
+     "titel": "Bekend Gezicht",
+     "ondertitel": "Een thriller",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Reinier Klopper is tandarts in Zuiderwaard. Van half het dorp weet hij hoe het gebit erbij staat, en hij is er de man naar om dat gewoon werk te noemen. Op een gewone zaterdagochtend deelt zijn buurvrouw een clip van haar slimme deurbel in de wijk-app: er staat een man voor Reiniers eigen voordeur, en de app zet er een naam onder. Ferdinand. Zijn beste vriend van school, die al twintig jaar in Zweden woont.",
+      "Achttien buren hebben de clip al gezien als Reinier één ding zeker weet: de man op de stoep is Ferdinand niet. Waarom hij daar zo zeker van is, heeft hij eenendertig jaar aan niemand verteld. In de zomer van 1998 verdronk een klasgenoot in de Westeinderplassen, en Reinier was de jongen op het pad die alleen zei wat hij had gezien. Niet wat hij dacht.",
+      "Binnen twee weken kantelt het dorp op de verkeerde man, en dan ligt er opnieuw een dode in Reiniers eigen straat. Om te bewijzen wat er in 1998 werkelijk is gebeurd, moet hij hardop zeggen wat hij eenendertig jaar over zijn beste vriend heeft gedacht. En ontdekken dat een deurbel geen gezichten kent, alleen namen.",
+      "Een label is geen gezicht."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/boek6-deurbel/publicatie/ACHTERFLAP-NL.md (tekst na de ---scheiding)",
+     "paginas_paperback": 524,
+     "paginas_hardcover": 414,
+     "isbn_paperback": "979-8164563288",
+     "isbn_hardcover": null,
+     "asin_ebook": null,
+     "asin_paperback": null,
+     "asin_hardcover": null,
+     "verschenen": null,
+     "woorden": 102378,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": [
+      "psychologische thriller",
+      "slimme deurbel",
+      "gezichtsherkenning thriller",
+      "dorpsgeheim thriller",
+      "cold case nederland",
+      "nederlandse thriller",
+      "verrassend slot"
+     ],
+     "categorieen": [
+      "FICTION / Thrillers / Psychological",
+      "FICTION / Thrillers / Suspense",
+      "FICTION / Mystery & Detective / International Crime & Mystery"
+     ]
+    },
+    "en": {
+     "titel": "Familiar Face",
+     "ondertitel": "A Thriller",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Reinier Klopper is the dentist in Zuiderwaard. He knows the state of half the village's teeth, and he's the kind of man who'd call that ordinary work. On an ordinary Saturday morning his neighbor shares a clip from her smart doorbell in the neighborhood app: there is a man at Reinier's own front door, and the app puts a name to the face. Ferdinand. His best friend from school, who has lived in Sweden for twenty years.",
+      "Eighteen neighbors have already seen the clip by the time Reinier knows one thing for certain: the man on the doorstep is not Ferdinand. Why he is so certain is something he has told no one in thirty-one years. In the summer of 1998, a classmate drowned in the Westeinderplassen, and Reinier was the kid on the path who told them only what he had seen. Not what he thought.",
+      "Within two weeks the village turns on the wrong man, and then another body turns up on Reinier's own street. To prove what really happened in 1998, he will have to say out loud what he has thought about his best friend for thirty-one years. And discover that a doorbell doesn't know faces. Only names.",
+      "A label is not a face."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/boek6-deurbel/publicatie/ACHTERFLAP-EN.md (tekst na de ---scheiding)",
+     "paginas_paperback": 506,
+     "paginas_hardcover": 408,
+     "isbn_paperback": "979-8164584528",
+     "isbn_hardcover": null,
+     "asin_ebook": null,
+     "asin_paperback": "B0HPVT557H",
+     "asin_hardcover": null,
+     "verschenen": "2026-10-30",
+     "woorden": null,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": [
+      "psychological thriller",
+      "smart doorbell mystery",
+      "facial recognition thriller",
+      "small town secrets thriller",
+      "cold case drowning",
+      "dutch village crime novel",
+      "unreliable witness thriller"
+     ],
+     "categorieen": [
+      "Literature & Fiction > Genre Fiction > Psychological",
+      "Literature & Fiction > Genre Fiction > Small Town & Rural"
+     ]
+    },
+    "de": {
+     "titel": "Bekanntes Gesicht",
+     "ondertitel": "Ein Thriller",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Reinier Klopper ist der Zahnarzt von Zuiderwaard. Er kennt die Zähne des halben Dorfes, und er ist einer, der das schlicht Arbeit nennt. An einem gewöhnlichen Samstagmorgen teilt seine Nachbarin einen Clip ihrer smarten Türklingel in der Nachbarschafts-App: Vor Reiniers eigener Haustür steht ein Mann, und die App setzt einen Namen darunter. Ferdinand. Sein bester Freund aus der Schulzeit, der seit zwanzig Jahren in Schweden lebt.",
+      "Achtzehn Nachbarn haben den Clip schon gesehen, als Reinier eines sicher weiß: Der Mann vor der Tür ist nicht Ferdinand. Warum er sich da so sicher ist, hat er einunddreißig Jahre lang niemandem erzählt. Im Sommer 1998 ertrank ein Mitschüler in den Westeinderplassen, und Reinier war der Junge auf dem Pfad, der nur sagte, was er gesehen hatte. Nicht, was er dachte.",
+      "Binnen zwei Wochen wendet sich das Dorf gegen den falschen Mann, und dann liegt wieder ein Toter in Reiniers eigener Straße. Um zu beweisen, was 1998 wirklich geschehen ist, muss er laut aussprechen, was er einunddreißig Jahre über seinen besten Freund gedacht hat. Und begreifen, dass eine Türklingel keine Gesichter kennt, nur Namen.",
+      "Ein Label ist kein Gesicht."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/boek6-deurbel/publicatie/ACHTERFLAP-DE.md (tekst na de ---scheiding)",
+     "paginas_paperback": 551,
+     "paginas_hardcover": 430,
+     "isbn_paperback": "979-8165585005",
+     "isbn_hardcover": null,
+     "asin_ebook": null,
+     "asin_paperback": "B0HPVCV7B7",
+     "asin_hardcover": null,
+     "verschenen": null,
+     "woorden": null,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": [
+      "psychothriller",
+      "smarte tuerklingel thriller",
+      "gesichtserkennung thriller",
+      "dorfgeheimnisse thriller",
+      "ungeloester todesfall 1998",
+      "niederlaendisches dorf krimi",
+      "unzuverlaessiger zeuge thriller"
+     ],
+     "categorieen": [
+      "Krimi & Thriller > Thriller > Psychothriller",
+      "Krimi & Thriller > Krimi"
+     ]
+    },
+    "es": {
+     "titel": "Rostro conocido",
+     "ondertitel": "Un thriller psicológico",
+     "uitgever": "Lowlands Press",
+     "flaptekst": [
+      "Reinier Klopper es el dentista de Zuiderwaard. Conoce la dentadura de medio pueblo, y es de los que a eso lo llaman simplemente trabajo. Una mañana de sábado cualquiera, su vecina comparte en la app del barrio un clip de su timbre inteligente: hay un hombre delante de la puerta del propio Reinier, y la app le pone un nombre debajo. Ferdinand. Su mejor amigo del instituto, que lleva veinte años viviendo en Suecia.",
+      "Dieciocho vecinos han visto ya el clip cuando Reinier sabe una sola cosa con certeza: el hombre de la puerta no es Ferdinand. Por qué está tan seguro es algo que lleva treinta y un años sin contar a nadie. En el verano de 1998, un compañero de clase se ahogó en los Westeinderplassen, y Reinier fue el chico del camino que solo contó lo que había visto. No lo que pensaba.",
+      "En dos semanas el pueblo se vuelve contra el hombre equivocado, y entonces aparece otro muerto en la misma calle de Reinier. Para demostrar lo que de verdad ocurrió en 1998, tendrá que decir en voz alta lo que ha pensado de su mejor amigo durante treinta y un años. Y descubrir que un timbre no conoce rostros, solo nombres.",
+      "Una etiqueta no es un rostro."
+     ],
+     "flaptekst_bron": "/Users/skillbuilder/Boeken/boek6-deurbel/publicatie/ACHTERFLAP-ES.md (tekst na de ---scheiding)",
+     "paginas_paperback": 513,
+     "paginas_hardcover": 412,
+     "isbn_paperback": "979-8165589126",
+     "isbn_hardcover": null,
+     "asin_ebook": null,
+     "asin_paperback": null,
+     "asin_hardcover": null,
+     "verschenen": null,
+     "woorden": 105009,
+     "prijs_ebook": "4,99",
+     "prijs_paperback": "19,99",
+     "prijs_hardcover": "29,99",
+     "keywords": [
+      "thriller psicologico",
+      "timbre inteligente misterio",
+      "reconocimiento facial thriller",
+      "secretos de pueblo pequeno",
+      "caso sin resolver 1998",
+      "novela negra pueblo holandes",
+      "testigo poco fiable thriller"
+     ],
+     "categorieen": [
+      "Policíaca, negra y suspense > Novela negra y suspense > Ámbito psicológico",
+      "Policíaca, negra y suspense > Crímenes"
+     ]
+    }
+   }
+  },
+  {
+   "n": 7,
+   "slug": "boek7",
+   "auteur": "C.M.R. Thorne",
+   "bron": [
+    "/Users/skillbuilder/Boeken/boek7/PLOT.md",
+    "/Users/skillbuilder/Boeken/boek7/VOORTGANG.md",
+    "/Users/skillbuilder/Boeken/boek7/VERTAALSTATUS.md",
+    "/Users/skillbuilder/Boeken/reeks/QUEUE.md",
+    "/Users/skillbuilder/Boeken/WERKLIJST.md",
+    "/Users/skillbuilder/Boeken/uitgeverij/publicatie/KANALEN-EN-RECENSIES-2026-10-31.md"
+   ],
+   "ed": {
+    "nl": {
+     "titel": "Ze Zag Hem Rennen",
+     "ondertitel": null,
+     "uitgever": null,
+     "flaptekst": null,
+     "flaptekst_bron": null,
+     "paginas_paperback": null,
+     "paginas_hardcover": null,
+     "isbn_paperback": null,
+     "isbn_hardcover": null,
+     "asin_ebook": null,
+     "asin_paperback": null,
+     "asin_hardcover": null,
+     "verschenen": null,
+     "woorden": 100747,
+     "prijs_ebook": null,
+     "prijs_paperback": null,
+     "prijs_hardcover": null,
+     "keywords": null,
+     "categorieen": null
+    },
+    "en": {
+     "titel": "She Saw Him Run",
+     "ondertitel": null,
+     "uitgever": null,
+     "flaptekst": null,
+     "flaptekst_bron": null,
+     "paginas_paperback": null,
+     "paginas_hardcover": null,
+     "isbn_paperback": null,
+     "isbn_hardcover": null,
+     "asin_ebook": null,
+     "asin_paperback": null,
+     "asin_hardcover": null,
+     "verschenen": null,
+     "woorden": null,
+     "prijs_ebook": null,
+     "prijs_paperback": null,
+     "prijs_hardcover": null,
+     "keywords": null,
+     "categorieen": null
+    },
+    "de": {
+     "titel": "Sie sah ihn rennen",
+     "ondertitel": null,
+     "uitgever": null,
+     "flaptekst": null,
+     "flaptekst_bron": null,
+     "paginas_paperback": null,
+     "paginas_hardcover": null,
+     "isbn_paperback": null,
+     "isbn_hardcover": null,
+     "asin_ebook": null,
+     "asin_paperback": null,
+     "asin_hardcover": null,
+     "verschenen": null,
+     "woorden": null,
+     "prijs_ebook": null,
+     "prijs_paperback": null,
+     "prijs_hardcover": null,
+     "keywords": null,
+     "categorieen": null
+    },
+    "es": {
+     "titel": "Ella lo vio correr",
+     "ondertitel": null,
+     "uitgever": null,
+     "flaptekst": null,
+     "flaptekst_bron": null,
+     "paginas_paperback": null,
+     "paginas_hardcover": null,
+     "isbn_paperback": null,
+     "isbn_hardcover": null,
+     "asin_ebook": null,
+     "asin_paperback": null,
+     "asin_hardcover": null,
+     "verschenen": null,
+     "woorden": null,
+     "prijs_ebook": null,
+     "prijs_paperback": null,
+     "prijs_hardcover": null,
+     "keywords": null,
+     "categorieen": null
+    }
+   }
+  }
+ ]
+}

@@ -11,6 +11,8 @@ HREF = {'nl': 'nl', 'en': 'en', 'de': 'de', 'es': 'es'}
 BASIS = 'https://lowlandspress.com/'
 
 D = json.load(open(os.path.join(HIER, '_teksten.json'), encoding='utf-8'))
+_sp = os.path.join(HIER, '_slugs.json')
+SLUGS = json.load(open(_sp, encoding='utf-8')) if os.path.exists(_sp) else {}
 UI = D['ui']
 BOEKEN = sorted(D['boeken'], key=lambda b: b['n'])
 # deel 6 en 7 staan niet in _teksten.json; ze komen uit EXTRA hieronder
@@ -63,6 +65,10 @@ PAGINAS = {'nl': ('over.html', 'contact.html', 'privacy.html', 'voorwaarden.html
            'en': ('about.html', 'contact.html', 'privacy.html', 'terms.html'),
            'de': ('ueber.html', 'kontakt.html', 'datenschutz.html', 'nutzungsbedingungen.html'),
            'es': ('sobre.html', 'contacto.html', 'privacidad.html', 'condiciones.html')}
+MEER = {'nl': 'Over dit boek en een leesfragment',
+        'en': 'About this book and an excerpt',
+        'de': 'Über dieses Buch und eine Leseprobe',
+        'es': 'Sobre este libro y un fragmento'}
 VOETREGEL = {
  'nl': 'Lowlands Press · KvK 52231895 · Klundert, Nederland',
  'en': 'Lowlands Press · Chamber of Commerce 52231895 · Klundert, the Netherlands',
@@ -150,6 +156,9 @@ def kaart(taal, boek, voor):
         else:
             knop = ''
             merk = '<span class="availability upcoming"><i></i>%s</span>' % e(LABEL[x['status']][taal])
+        meer = SLUGS.get('%d-%s' % (n, taal))
+        if meer:
+            knop += '<a class="meer" href="%s%s">%s</a>' % (voor, meer, e(MEER[taal]))
         return ('<article class="book"><div class="cover-wrap"><span class="case-number">%s %s</span>%s</div>'
                 '<div class="book-copy">%s<h2>%s</h2><p>%s</p>%s<p class="status-regel">%s</p></div></article>'
                 % (e(ui['dossier']), nr, beeld, merk, e(titel), e(pitch), knop, e(status)))
@@ -183,6 +192,9 @@ def kaart(taal, boek, voor):
     if winkels:
         knoppen.append('<div class="store-group" aria-label="%s">%s</div>' % (e(ui['andereWinkels']), ''.join(winkels)))
 
+    meer = SLUGS.get('%d-%s' % (n, taal))
+    if meer:
+        knoppen.append('<a class="meer" href="%s%s">%s%s</a>' % (voor, meer, e(MEER[taal]), ''))
     return ('<article class="book"><div class="cover-wrap"><span class="case-number">%s %s</span>%s</div>'
             '<div class="book-copy"><span class="availability"><i></i>%s</span><h2>%s</h2><p>%s</p>%s</div></article>'
             % (e(ui['dossier']), nr, beeld, e(ui['nuVerkrijgbaar']), e(titel), e(pitch), ''.join(knoppen)))

@@ -156,3 +156,67 @@ a:hover > .pijl{ opacity:1; }
   color:#d4d9d7; font-size:14px; background:#0e1415;
 }
 .recensie-links a:hover{ color:var(--paper); border-color:#5a6667; background:#131b1c; }
+
+/* ---- boekpagina ---- */
+.boekkop{
+  max-width:1040px; margin:0 auto; padding:clamp(34px,6vw,70px) clamp(20px,4vw,48px) 44px;
+  display:grid; grid-template-columns:minmax(200px,320px) 1fr; gap:clamp(28px,5vw,56px);
+  align-items:start;
+}
+.boekkop-beeld img{ width:100%; height:auto; display:block; border:1px solid var(--line); }
+.boekkop h1{
+  font-family:var(--font-serif),Georgia,serif; letter-spacing:-.03em; line-height:1.02;
+  font-size:clamp(36px,5.5vw,60px); font-weight:600; margin:16px 0 8px;
+}
+.boekkop .ondertitel{ color:#9aa3a2; margin:0 0 18px; font-size:14px;
+  letter-spacing:.14em; text-transform:uppercase; }
+.boekkop .pitch{
+  color:#c3c9c7; font-family:var(--font-serif),Georgia,serif; margin:0 0 30px;
+  font-size:clamp(18px,2.2vw,22px); line-height:1.45; max-width:560px;
+}
+.boekkop .kopje{
+  color:#8e9695; font-size:11px; letter-spacing:.18em; text-transform:uppercase;
+  font-weight:700; margin:0 0 12px; font-family:var(--font-sans),Arial,sans-serif;
+}
+.koopblok{ display:flex; flex-wrap:wrap; gap:10px; }
+.koopblok .koop{
+  display:inline-flex; align-items:center; border:1px solid var(--line); border-radius:999px;
+  padding:10px 18px; color:#d4d9d7; font-size:14px; background:#0e1415;
+}
+.koopblok .koop:hover{ color:var(--paper); border-color:#5a6667; background:#131b1c; }
+.koopblok .hoofd{ background:var(--red); border-color:var(--red); color:#fff; font-weight:700; }
+.koopblok .hoofd:hover{ background:#c0322c; border-color:#c0322c; color:#fff; }
+.koopblok .prijs{ opacity:.75; margin-left:8px; }
+.boekflap p:first-child{
+  font-family:var(--font-serif),Georgia,serif; font-size:clamp(19px,2.3vw,23px);
+  line-height:1.5; color:var(--paper);
+}
+.fragment{
+  max-width:720px; margin:0 auto 90px; padding:0 clamp(20px,4vw,48px);
+  border-top:1px solid var(--line); padding-top:clamp(34px,5vw,56px);
+}
+.fragment h2{
+  font-family:var(--font-serif),Georgia,serif; font-weight:600; color:var(--paper);
+  font-size:clamp(26px,3.4vw,36px); letter-spacing:-.02em; margin:0 0 10px;
+}
+.fragment .fragmentnoot{ color:#8e9695; font-size:14px; margin:0 0 34px; max-width:540px; }
+.fragment h3{
+  color:#9aa3a2; font-size:11px; letter-spacing:.22em; text-transform:uppercase;
+  font-weight:700; margin:44px 0 18px; font-family:var(--font-sans),Arial,sans-serif;
+}
+.fragment h3:first-child{ margin-top:0; }
+.fragmenttekst p{
+  font-family:var(--font-serif),Georgia,serif; font-size:18px; line-height:1.68;
+  color:#c7ccca; margin:0 0 16px; hyphens:auto;
+}
+@media (max-width:760px){
+  .boekkop{ grid-template-columns:1fr; gap:24px; }
+  .boekkop-beeld{ max-width:260px; }
+}
+/* link vanaf de boekkaart naar de boekpagina */
+.meer{
+  display:inline-flex; align-items:center; margin-top:4px;
+  color:#d4d9d7; font-size:14px; font-weight:700;
+  border-bottom:1px solid var(--red); padding-bottom:2px;
+}
+.meer:hover{ color:var(--paper); }
