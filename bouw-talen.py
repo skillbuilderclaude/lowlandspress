@@ -283,7 +283,9 @@ def bouw(taal):
 
     # feitenblok: zonder eigen kop (die staat nu in de hero) en vóór de boekenlijst
     a = h.find('<section class="series-note"'); b = h.find('</section>', a) + 10
-    talentekst = KOP[taal][2] if taal != 'nl' else ui['talenTekst']
+    talentekst = (KOP[taal][2] if taal != 'nl' else
+                  'De eerste vijf delen zijn verkrijgbaar in het Nederlands, Engels, Duits '
+                  'en Spaans. Het aanbod van e-book en print verschilt per winkel en taal.')
     feiten = ('<section class="series-note" id="series"><dl class="series-facts">'
               '<div><dt>%s</dt><dd>%s</dd></div><div><dt>%s</dt><dd>%s</dd></div>'
               '<div><dt>%s</dt><dd>%s</dd></div><div><dt>%s</dt><dd>%s</dd></div></dl></section>'
