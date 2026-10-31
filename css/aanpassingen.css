@@ -1,0 +1,54 @@
+/* Aanpassingen op de overgenomen vormgeving — Cristian, 31-10-2026.
+   1. De mockup schaalt tot de volle hoogte van het tekstblok ernaast, zonder bijsnijden:
+      de afbeelding bepaalt zelf haar breedte, de kolom volgt.
+   2. Meeschalen van telefoon tot ultrawide. */
+
+/* ---- 1. beeldpaneel ---- */
+/* Alleen vanaf tablet: onder 660px stapelt de originele CSS de kaart, en die regel
+   mag deze override niet omverduwen (mijn stylesheet laadt erna). */
+@media (min-width: 661px){
+  .book{ grid-template-columns: auto 1fr; }
+}
+.cover-wrap{
+  align-items: stretch;
+  padding: 0;
+  max-width: clamp(190px, 30vw, 360px);  /* vangnet bij extreem lange teksten */
+}
+.cover-wrap .cover{
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;                    /* heel laten, niet bijsnijden */
+  display: block;
+}
+.case-number{
+  top: 16px; bottom: 16px; left: 14px;
+  display: flex; align-items: flex-start;
+  text-shadow: 0 1px 6px rgba(0,0,0,.85);
+}
+
+/* ---- 2. meeschalen ---- */
+
+/* telefoon: gestapeld, beeld op natuurlijke hoogte */
+@media (max-width: 660px){
+  .cover-wrap{ max-width: none; padding: 26px 26px 26px 44px; align-items: center; }
+  .cover-wrap .cover{ height: auto; width: min(66%, 280px); max-height: none; margin: 0 auto; }
+  .case-number{ bottom: auto; }
+}
+
+/* tablet staand: smallere beeldkolom zodat de tekst ademt */
+@media (min-width: 661px) and (max-width: 900px){
+  .cover-wrap{ max-width: clamp(170px, 26vw, 240px); }
+}
+
+/* ruime monitor: het raster mag meegroeien */
+@media (min-width: 1400px){
+  .shelf{ max-width: 1240px; }
+}
+
+/* ultrawide: niet verder uitrekken, wel ruimer ademen */
+@media (min-width: 1900px){
+  .shelf{ max-width: 1360px; gap: 36px; }
+  /* beeldkolom niet verder verbreden: anders wordt de mockup hoger dan het tekstblok
+     en rekt de kaart mee (gemeten op 2560px: beeld 524 tegen tekst 479) */
+}
