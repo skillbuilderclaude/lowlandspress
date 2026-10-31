@@ -285,7 +285,7 @@
   {
    "n": 5,
    "slug": "beeldmateriaal",
-   "mockup": null,
+   "mockup": "mockups/nl-beeldmateriaal-mockup-v1.png",
    "ed": {
     "nl": {
      "titel": "Beeldmateriaal",
