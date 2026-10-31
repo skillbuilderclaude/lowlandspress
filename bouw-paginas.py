@@ -66,6 +66,11 @@ def schrijf(taal, index, titel, oms, eyebrow, kop, body, schema=None):
 <meta property="og:url" content="{url}"/>
 <meta property="og:site_name" content="Lowlands Press"/>
 <meta property="og:type" content="website"/><meta property="og:locale" content="{LOCALE[taal]}"/>
+<meta property="og:image" content="https://lowlandspress.com/img/deelkaart.png"/>
+<meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Lowlands Press"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://lowlandspress.com/img/deelkaart.png"/>
 {alt}<link rel="canonical" href="{url}"/>{ld}</head>
 <body><main>{mast}
 <section class="intro" id="top"><div class="eyebrow">{eyebrow}</div><h1>{kop}</h1></section>
