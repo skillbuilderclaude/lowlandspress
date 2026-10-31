@@ -183,7 +183,7 @@ def bouw(n, taal):
 
     doc = f'''<!DOCTYPE html><html lang="{taal}"><head><meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<link rel="stylesheet" href="{voor}css/site.css"/><link rel="stylesheet" href="{voor}css/aanpassingen.css?v=8"/>
+<link rel="stylesheet" href="{voor}css/site.css"/><link rel="stylesheet" href="{voor}css/aanpassingen.css?v=9"/>
 <title>{e(titel)} | C.M.R. Thorne | Lowlands Press</title>
 <meta name="description" content="{e(oms[:250])}"/>
 <meta name="robots" content="index, follow"/>

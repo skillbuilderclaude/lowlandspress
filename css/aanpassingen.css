@@ -229,3 +229,16 @@ a:hover > .pijl{ opacity:1; }
   padding:16px 18px; margin:0 0 20px; white-space:pre-wrap; word-break:break-word;
   overflow-x:auto;
 }
+
+/* ---- hero en feitenblok, herschikt 31-10 ---- */
+.intro .uitleg{
+  color:#aab0ae; max-width:620px; margin:18px 0 0;
+  font-family:var(--font-sans),Arial,sans-serif; font-size:clamp(15px,1.7vw,17px); line-height:1.6;
+}
+/* het feitenblok staat nu boven de boeken en heeft geen eigen kop meer */
+.series-note{ margin:0 auto 10px !important; padding-top:clamp(26px,4vw,38px) !important;
+  padding-bottom:clamp(26px,4vw,38px) !important; }
+.kiesboek{
+  max-width:1040px; margin:34px auto 0; padding:0 clamp(20px,4vw,48px);
+  color:#8e9695; font-size:11px; letter-spacing:.18em; text-transform:uppercase; font-weight:700;
+}

@@ -48,6 +48,20 @@ LABEL = {
 OMSLAG_VOLGT = {'nl': 'OMSLAG<br/>VOLGT', 'en': 'COVER<br/>TO COME',
                 'de': 'COVER<br/>FOLGT', 'es': 'PORTADA<br/>PENDIENTE'}
 # teller in de kop: zeven delen, vijf te koop
+HERO = {
+ 'nl': ('DE THORNE-THRILLERS', 'Zeven zaken. Eén terugkerende rechercheur.',
+        'Psychologische thrillers van C.M.R. Thorne, in vier talen. In elk deel keek er een '
+        'apparaat mee.'),
+ 'en': ('THE THORNE THRILLERS', 'Seven cases. One recurring detective.',
+        'Psychological thrillers by C.M.R. Thorne, in four languages. In every book, a device '
+        'was watching.'),
+ 'de': ('DIE THORNE-THRILLER', 'Sieben Fälle. Eine Ermittlerin, die wiederkommt.',
+        'Psychothriller von C.M.R. Thorne, in vier Sprachen. In jedem Band hat ein Gerät '
+        'mitgesehen.'),
+ 'es': ('LOS THRILLERS DE THORNE', 'Siete casos. Una investigadora que siempre vuelve.',
+        'Thrillers psicológicos de C.M.R. Thorne, en cuatro idiomas. En cada libro había un '
+        'aparato mirando.'),
+}
 KOP = {
  'en': ('Seven villages where a device was watching.', 'Seven cases. One recurring detective.',
         'The first five books are published in Dutch, English, German and Spanish. Which editions are on sale, ebook or print, differs per store and per language.'),
@@ -260,25 +274,26 @@ def bouw(taal):
     kaarten = ''.join(kaart(taal, bk, voor) for bk in BOEKEN)
     h = h[:a] + '<section class="shelf" aria-label="%s">%s</section>' % (e(ui['heroSub']), kaarten) + h[b:]
 
-    # hero
+    # hero: eerst zeggen wat dit is, pas daarna de sfeerregel
     a = h.find('<section class="intro"'); b = h.find('</section>', a) + 10
-    herotitel = KOP[taal][0] if taal != 'nl' else 'Zeven dorpen waar een apparaat meekeek.'
-    h = h[:a] + ('<section class="intro" id="top"><div class="eyebrow">%s</div><h1>%s</h1><p>%s</p></section>'
-                 % (e(ui['heroEyebrow']), e(herotitel), e(ui['heroSub']))) + h[b:]
+    eyebrow, kop, uitleg = HERO[taal]
+    h = h[:a] + ('<section class="intro" id="top"><div class="eyebrow">%s</div><h1>%s</h1>'
+                 '<p class="uitleg">%s</p></section>'
+                 % (e(eyebrow), e(kop), e(uitleg))) + h[b:]
 
-    # reeksblok
+    # feitenblok: zonder eigen kop (die staat nu in de hero) en vóór de boekenlijst
     a = h.find('<section class="series-note"'); b = h.find('</section>', a) + 10
-    reekstitel = KOP[taal][1] if taal != 'nl' else 'Zeven zaken. Eén terugkerende rechercheur.'
     talentekst = KOP[taal][2] if taal != 'nl' else ui['talenTekst']
-    h = h[:a] + ('<section class="series-note" id="series" aria-labelledby="series-title">'
-                 '<div class="eyebrow">%s</div><h2 id="series-title">%s</h2><dl class="series-facts">'
-                 '<div><dt>%s</dt><dd>%s</dd></div><div><dt>%s</dt><dd>%s</dd></div>'
-                 '<div><dt>%s</dt><dd>%s</dd></div><div><dt>%s</dt><dd>%s</dd></div></dl></section>'
-                 % (e(ui['reeksEyebrow']), e(reekstitel),
-                    e(ui['leesvolgordeKop']), e(ui['leesvolgordeTekst']),
-                    e(ui['talenKop']), e(talentekst),
-                    e(ui['auteurKop']), e(ui['auteurTekst']),
-                    e(ui['rodeDraadKop']), e(ui['rodeDraadTekst']))) + h[b:]
+    feiten = ('<section class="series-note" id="series"><dl class="series-facts">'
+              '<div><dt>%s</dt><dd>%s</dd></div><div><dt>%s</dt><dd>%s</dd></div>'
+              '<div><dt>%s</dt><dd>%s</dd></div><div><dt>%s</dt><dd>%s</dd></div></dl></section>'
+              % (e(ui['leesvolgordeKop']), e(ui['leesvolgordeTekst']),
+                 e(ui['talenKop']), e(talentekst),
+                 e(ui['auteurKop']), e(ui['auteurTekst']),
+                 e(ui['rodeDraadKop']), e(ui['rodeDraadTekst'])))
+    h = h[:a] + h[b:]                                   # oude plek leeghalen
+    j = h.find('<section class="shelf"')
+    h = h[:j] + feiten + ('<p class="kiesboek">%s</p>' % e(ui['heroSub'])) + h[j:]
 
     # recensieverzoek, achter het reeksblok
     rb = recensieblok(taal)
