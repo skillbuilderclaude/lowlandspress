@@ -31,6 +31,7 @@ def _naar_html(tekst):
             if not a:
                 continue
             a = H.escape(' '.join(a.split()))
+            a = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', a)   # vet eerst
             a = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', a)
             uit.append('<p>%s</p>' % a)
     return uit
