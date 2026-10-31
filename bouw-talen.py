@@ -80,8 +80,8 @@ def kaart(taal, boek, voor):
         x = EXTRA[n]
         titel, pitch, status = x[taal]
         if x['omslag']:
-            beeld = ('<img src="%s%s" alt="%s, C.M.R. Thorne" class="cover" width="625" height="1000"/>'
-                     % (voor, x['omslag'], e(titel)))
+            beeld = ('<img src="%scovers/%s-%d.jpg" alt="%s, C.M.R. Thorne" class="cover" width="625" height="1000" loading="lazy"/>'
+                     % (voor, taal, n, e(titel)))
         else:
             beeld = ('<div class="cover-volgt" aria-label="%s"><span>%s</span></div>'
                      % (e(LABEL[x['status']][taal]), OMSLAG_VOLGT[taal]))
@@ -102,11 +102,11 @@ def kaart(taal, boek, voor):
     ed = boek['ed'][taal]
     titel, pitch, links = ed['titel'], ed['pitch'], ed['links']
     mock = boek.get('mockup')
-    if mock:
+    if taal == 'nl' and mock:
         beeld = '<img src="%s%s" alt="%s, C.M.R. Thorne" class="cover mockup"/>' % (voor, mock, e(titel))
     else:
-        beeld = ('<img src="%scovers/nl-beeldmateriaal.jpg" alt="%s, C.M.R. Thorne" class="cover" width="625" height="1000"/>'
-                 % (voor, e(titel)))
+        beeld = ('<img src="%scovers/%s-%d.jpg" alt="%s, C.M.R. Thorne" class="cover" width="625" height="1000" loading="lazy"/>'
+                 % (voor, taal, n, e(titel)))
 
     knoppen = []
     if links.get('amazon'):
