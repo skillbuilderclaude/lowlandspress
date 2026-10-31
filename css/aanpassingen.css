@@ -9,7 +9,7 @@
 @media (min-width: 661px){
   .book{ grid-template-columns: auto 1fr; }
   /* Vangnet als het script niet draait; het script zet de exacte breedte inline. */
-  .cover-wrap{ width: clamp(190px, 30vw, 340px); max-width: 46%; }
+  .cover-wrap{ width: clamp(190px, 30vw, 340px); }
 }
 .cover-wrap{
   align-items: stretch;
