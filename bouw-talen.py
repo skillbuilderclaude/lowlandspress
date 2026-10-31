@@ -79,6 +79,53 @@ PAGINA_LABEL = {
 def e(s):
     return H.escape(s, quote=True)
 
+RECENSIE = {
+ 'nl': ('EEN PAAR REGELS', 'Een boek uit?',
+        'Winkels laten vooral zien wat gelezen en besproken wordt, en zonder dat blijft een '
+        'onbekende auteur onzichtbaar. Een paar eerlijke regels zijn genoeg. Schrijf ze waar u '
+        'het boek kocht; voor Amazon staan de directe links hieronder.',
+        'Schrijf een recensie:'),
+ 'en': ('A FEW LINES', 'Finished a book?',
+        'Stores show what is being read and talked about, and an unknown author depends on that '
+        'more than on anything else. A few honest lines are enough. Leave them wherever you '
+        'bought the book; the direct links for Amazon are below.',
+        'Write a review:'),
+ 'de': ('EIN PAAR ZEILEN', 'Ein Buch ausgelesen?',
+        'Die Händler zeigen vor allem, was gelesen und besprochen wird, und wer noch keinen Namen '
+        'hat, kann sich auf wenig anderes verlassen. Ein paar ehrliche Zeilen reichen. Schreiben '
+        'Sie sie dort, wo Sie das Buch gekauft haben; für Amazon stehen die Links unten.',
+        'Rezension schreiben:'),
+ 'es': ('UNAS LÍNEAS', '¿Has terminado un libro?',
+        'Las tiendas enseñan sobre todo lo que se lee y se comenta, y quien todavía no tiene '
+        'nombre depende de eso más que de nada. Bastan unas líneas sinceras. Déjalas donde '
+        'compraste el libro; abajo están los enlaces directos de Amazon.',
+        'Escribe una reseña:'),
+}
+
+
+def recensieblok(taal):
+    """Sectie met het recensieverzoek plus een directe recensielink per editie."""
+    eyebrow, kop, tekst, label = RECENSIE[taal]
+    links = []
+    for b in BOEKEN:
+        if b['n'] in EXTRA:
+            continue
+        ed = b['ed'][taal]
+        adres = (ed.get('links') or {}).get('amazon')
+        if not adres:
+            continue
+        markt = adres.split('/dp/')[0]
+        asin = adres.rsplit('/', 1)[-1]
+        links.append('<a href="%s/review/create-review?asin=%s" target="_blank" rel="noreferrer">'
+                     '%s<svg class="pijl" viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path d="M2.6 7.4 7.4 2.6M3.8 2.6h3.6v3.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>' % (markt, asin, e(ed['titel'])))
+    if not links:
+        return ''
+    return ('<section class="recensie" aria-labelledby="recensie-titel">'
+            '<div class="eyebrow">%s</div><h2 id="recensie-titel">%s</h2><p>%s</p>'
+            '<p class="recensie-label">%s</p><div class="recensie-links">%s</div></section>'
+            % (e(eyebrow), e(kop), e(tekst), e(label), ''.join(links)))
+
+
 def kaart(taal, boek, voor):
     """Eén dossierkaart. `voor` is '' voor de hoofdmap, '../' voor een taalmap."""
     ui = UI[taal]
@@ -95,7 +142,7 @@ def kaart(taal, boek, voor):
                      % (e(LABEL[x['status']][taal]), OMSLAG_VOLGT[taal]))
         vl = (x.get('links') or {}).get(taal) or {}
         if vl.get('paperback'):
-            knop = ('<a class="primary" href="%s" target="_blank" rel="noreferrer">%s<span aria-hidden="true">↗</span></a>'
+            knop = ('<a class="primary" href="%s" target="_blank" rel="noreferrer">%s<svg class="pijl" viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path d="M2.6 7.4 7.4 2.6M3.8 2.6h3.6v3.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>'
                     '<div class="format-group" aria-label="%s"><a href="%s" target="_blank" rel="noreferrer">%s</a></div>'
                     % (vl['paperback'], e(ui['bekijkOpAmazon']), e(ui['paperback']),
                        vl['paperback'], e(ui['paperback'])))
@@ -118,7 +165,7 @@ def kaart(taal, boek, voor):
 
     knoppen = []
     if links.get('amazon'):
-        knoppen.append('<a class="primary" href="%s" target="_blank" rel="noreferrer">%s<span aria-hidden="true">↗</span></a>'
+        knoppen.append('<a class="primary" href="%s" target="_blank" rel="noreferrer">%s<svg class="pijl" viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path d="M2.6 7.4 7.4 2.6M3.8 2.6h3.6v3.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>'
                        % (links['amazon'], e(ui['bekijkOpAmazon'])))
         uitvoeringen = ['<a href="%s" target="_blank" rel="noreferrer">%s</a>' % (links['amazon'], e(ui['ebook']))]
         if links.get('paperback'):
@@ -128,10 +175,10 @@ def kaart(taal, boek, voor):
                        % (e(ui['ebook']), ''.join(uitvoeringen)))
     winkels = []
     if links.get('overig'):
-        winkels.append('<a href="%s" target="_blank" rel="noreferrer">%s<span aria-hidden="true"> ↗</span></a>'
+        winkels.append('<a href="%s" target="_blank" rel="noreferrer">%s<svg class="pijl" viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path d="M2.6 7.4 7.4 2.6M3.8 2.6h3.6v3.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>'
                        % (links['overig'], e(ui['andereWinkels'])))
     if links.get('googleplay'):
-        winkels.append('<a href="%s" target="_blank" rel="noreferrer">Google Play<span aria-hidden="true"> ↗</span></a>'
+        winkels.append('<a href="%s" target="_blank" rel="noreferrer">Google Play<svg class="pijl" viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path d="M2.6 7.4 7.4 2.6M3.8 2.6h3.6v3.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>'
                        % links['googleplay'])
     if winkels:
         knoppen.append('<div class="store-group" aria-label="%s">%s</div>' % (e(ui['andereWinkels']), ''.join(winkels)))
@@ -186,7 +233,8 @@ def schema(taal):
     return '<script type="application/ld+json">%s</script>' % json.dumps(reeks, ensure_ascii=False)
 
 # ---------------------------------------------------------------- bouwen
-bron = open(os.path.join(HIER, 'index.html'), encoding='utf-8').read()
+# Vaste bron. Nooit index.html lezen: dat is de uitvoer, en dan stapelt elke draai zich op.
+bron = open(os.path.join(HIER, '_sjabloon.html'), encoding='utf-8').read()
 
 def bouw(taal):
     voor = '' if taal == 'nl' else '../'
@@ -195,9 +243,10 @@ def bouw(taal):
 
     # kaarten
     a = h.find('<section class="shelf"')
-    b = h.find('</section>', h.rfind('</article>'))
+    b = h.find('<section class="series-note"')
+    assert a != -1 and b > a, 'shelf of reeksblok niet gevonden in het sjabloon'
     kaarten = ''.join(kaart(taal, bk, voor) for bk in BOEKEN)
-    h = h[:a] + '<section class="shelf" aria-label="%s">%s</section>' % (e(ui['heroSub']), kaarten) + h[b + 10:]
+    h = h[:a] + '<section class="shelf" aria-label="%s">%s</section>' % (e(ui['heroSub']), kaarten) + h[b:]
 
     # hero
     a = h.find('<section class="intro"'); b = h.find('</section>', a) + 10
@@ -218,6 +267,13 @@ def bouw(taal):
                     e(ui['talenKop']), e(talentekst),
                     e(ui['auteurKop']), e(ui['auteurTekst']),
                     e(ui['rodeDraadKop']), e(ui['rodeDraadTekst']))) + h[b:]
+
+    # recensieverzoek, achter het reeksblok
+    rb = recensieblok(taal)
+    if rb:
+        merk = '<footer>'
+        j = h.rfind(merk)
+        h = h[:j] + rb + h[j:]
 
     # taalnav en voet
     a = h.find('<nav class="languages"'); b = h.find('</nav>', a) + 6

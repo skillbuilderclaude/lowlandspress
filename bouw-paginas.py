@@ -57,7 +57,7 @@ def schrijf(taal, index, titel, oms, eyebrow, kop, body, schema=None):
     alt += '<link rel="alternate" hreflang="x-default" href="%s%s"/>' % (BASIS, NAMEN['nl'][index])
     doc = f'''<!DOCTYPE html><html lang="{taal}"><head><meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<link rel="stylesheet" href="{voor}css/site.css"/><link rel="stylesheet" href="{voor}css/aanpassingen.css?v=5"/>
+<link rel="stylesheet" href="{voor}css/site.css"/><link rel="stylesheet" href="{voor}css/aanpassingen.css?v=6"/>
 <title>{e(titel)}</title>
 <meta name="description" content="{e(oms)}"/>
 <meta name="robots" content="index, follow"/>

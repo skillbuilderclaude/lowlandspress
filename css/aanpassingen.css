@@ -120,3 +120,39 @@
 .languages a.active{
   color:var(--paper); background:#273031; box-shadow:inset 0 0 0 1px #3a4445;
 }
+
+/* ---- externe-link-pijl ----
+   Het teken ↗ (U+2197) rendert op iOS als kleuremoji: een grijsblauw blokje.
+   Daarom een inline SVG, die de kleur en de dikte van de tekst overneemt. */
+.pijl{
+  width:.6em; height:.6em; margin-left:.45em; flex:none;
+  display:inline-block; vertical-align:baseline;
+  opacity:.75;
+}
+a:hover > .pijl{ opacity:1; }
+.primary .pijl{ opacity:.9; margin-left:.55em; }
+
+/* ---- recensieverzoek ---- */
+.recensie{
+  max-width:1040px; margin:0 auto 90px; padding:0 clamp(20px,4vw,48px);
+}
+.recensie h2{
+  font-family:var(--font-serif),Georgia,serif; letter-spacing:-.025em;
+  margin:18px 0 16px; font-size:clamp(28px,4vw,42px); font-weight:600; line-height:1.08;
+  max-width:700px;
+}
+.recensie > p{
+  color:#bcc1bf; max-width:620px; margin:0 0 26px;
+  font-family:var(--font-serif),Georgia,serif; font-size:clamp(17px,2vw,20px); line-height:1.5;
+}
+.recensie .recensie-label{
+  color:#8e9695; font-family:var(--font-sans),Arial,sans-serif; font-size:11px;
+  letter-spacing:.18em; text-transform:uppercase; font-weight:700; margin:0 0 14px;
+}
+.recensie-links{ display:flex; flex-wrap:wrap; gap:10px 12px; }
+.recensie-links a{
+  display:inline-flex; align-items:center;
+  border:1px solid var(--line); border-radius:999px; padding:9px 16px;
+  color:#d4d9d7; font-size:14px; background:#0e1415;
+}
+.recensie-links a:hover{ color:var(--paper); border-color:#5a6667; background:#131b1c; }
