@@ -52,3 +52,35 @@
   /* beeldkolom niet verder verbreden: anders wordt de mockup hoger dan het tekstblok
      en rekt de kaart mee (gemeten op 2560px: beeld 524 tegen tekst 479) */
 }
+
+/* ---- voet: links naar de zakelijke pagina's ---- */
+.voetlinks{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 26px;margin:26px 0 0}
+.voetlinks a{color:#9aa3a2;font-size:13px;border-bottom:1px solid transparent;padding-bottom:2px}
+.voetlinks a:hover{color:var(--paper);border-bottom-color:var(--red)}
+.voet-kvk{color:#5f6766 !important;font-size:11px !important;margin-top:10px !important;
+  letter-spacing:.04em}
+
+/* ---- tekstpagina's (over, contact, privacy, voorwaarden) ---- */
+.terug{color:#c7ccca;border:1px solid #3a4445;border-radius:999px;padding:7px 15px;font-size:13px}
+.terug:hover{color:var(--paper);border-color:#5a6667}
+.tekstpagina{max-width:720px;margin:0 auto 90px;padding:0 clamp(20px,4vw,48px);
+  font-size:16px;line-height:1.72;color:#c3c9c7}
+.tekstpagina .lead{font-family:var(--font-serif),Georgia,serif;font-size:clamp(19px,2.3vw,23px);
+  line-height:1.5;color:var(--paper);margin:0 0 36px}
+.tekstpagina h2{font-family:var(--font-serif),Georgia,serif;font-weight:600;color:var(--paper);
+  font-size:clamp(21px,2.6vw,26px);letter-spacing:-.015em;line-height:1.2;
+  margin:44px 0 12px;padding-top:26px;border-top:1px solid var(--line)}
+.tekstpagina h2:first-child{border-top:0;padding-top:0;margin-top:0}
+.tekstpagina p{margin:0 0 18px}
+.tekstpagina a{color:var(--paper);text-decoration:underline;text-underline-offset:3px;
+  text-decoration-color:var(--red)}
+.tekstpagina .klein{font-size:13px;color:#747c7b;margin-top:34px}
+.tekstpagina .gegevens{margin:0;display:grid;gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.tekstpagina .gegevens>div{display:grid;grid-template-columns:200px 1fr;gap:0;
+  background:#0d1314;padding:14px 18px}
+.tekstpagina .gegevens dt{color:#8e9695;font-size:13px;letter-spacing:.04em}
+.tekstpagina .gegevens dd{margin:0;color:var(--paper);font-size:15px}
+@media (max-width:620px){
+  .tekstpagina .gegevens>div{grid-template-columns:1fr;gap:4px}
+}

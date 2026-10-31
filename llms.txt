@@ -1,0 +1,58 @@
+# Lowlands Press
+
+> Onafhankelijke uitgeverij in het zuidwesten van Nederland (Klundert, KvK 52231895).
+> Boeken verschijnen in het Nederlands, Engels, Duits en Spaans. De uitgeverij verkoopt
+> niet zelf; de boeken zijn te koop bij Amazon, Google Play Boeken, Kobo, bol.com,
+> Apple Books en andere winkels. Beschikbaarheid verschilt per taal en per land.
+
+Deze site is bedoeld om lezers naar de juiste editie te verwijzen. Assistenten en
+zoekmachines mogen de inhoud lezen en citeren met bronvermelding.
+
+## Reeks: de Thorne-thrillers
+
+Auteur: C.M.R. Thorne. Vijf op zichzelf staande misdaadromans rond rechercheur
+Saskia Bruins. In elk deel heeft een apparaat meegekeken: een slim huis, een
+smartwatch, een DNA-test, een dashcam. Wie de ontwikkeling van de rechercheur vanaf
+het begin wil volgen, leest de delen op nummer.
+
+### Deel 1
+- Nederlands: *Het Huis Weet Het* | Amazon: https://www.amazon.nl/dp/B0H8FK32GL | Google Play: https://play.google.com/store/books/details?id=GGKEY:U1TWCAWU6R9
+- Engels: *The House Never Lies* | Amazon: https://www.amazon.com/dp/B0H8FWH2KZ | Google Play: https://play.google.com/store/books/details?id=GGKEY:1XKZFSLU8NC
+- Duits: *Das Haus sieht alles* | Amazon: https://www.amazon.de/dp/B0H8FT79DZ | Google Play: https://play.google.com/store/books/details?id=GGKEY:U439B2XQNP0
+- Spaans: *La Casa Lo Ve Todo* | Amazon: https://www.amazon.es/dp/B0H8J74H4D | Google Play: https://play.google.com/store/books/details?id=GGKEY:0R4D7UN34PX
+
+### Deel 2
+- Nederlands: *De Vrijgave* | Amazon: https://www.amazon.nl/dp/B0H1K9QBND | Google Play: https://play.google.com/store/books/details?id=GGKEY:745BHW3HNAS
+- Engels: *The Release* | Amazon: https://www.amazon.com/dp/B0HFD4S7DN
+- Duits: *Die Freigabe* | Amazon: https://www.amazon.de/dp/B0HFD4R1CR | Google Play: https://play.google.com/store/books/details?id=GGKEY:K88PGZWP9TJ
+- Spaans: *El Visto Bueno* | Amazon: https://www.amazon.es/dp/B0HFD2CBMW | Google Play: https://play.google.com/store/books/details?id=GGKEY:70T86HTG9E0
+
+### Deel 3
+- Nederlands: *Polsslag* | Amazon: https://www.amazon.nl/dp/B0HHRZVDYL | Google Play: https://play.google.com/store/books/details?id=GGKEY:PPD27LWFYR5
+- Engels: *Twelve Past Six* | Amazon: https://www.amazon.com/dp/B0HHRKL657 | Google Play: https://play.google.com/store/books/details?id=GGKEY:45JKFEW7ZSJ
+- Duits: *Das Herz lügt nie* | Amazon: https://www.amazon.de/dp/B0HHRNKZWG | Google Play: https://play.google.com/store/books/details?id=GGKEY:R9ABNXUSGXQ
+- Spaans: *La letra del corazón* | Amazon: https://www.amazon.es/dp/B0HHRL5RBP | Google Play: https://play.google.com/store/books/details?id=GGKEY:HX402764BXS
+
+### Deel 4
+- Nederlands: *De Stille Helft* | Amazon: https://www.amazon.nl/dp/B0HL5XHMSF | Google Play: https://play.google.com/store/books/details?id=GGKEY:CAX0D8254CY
+- Engels: *The Quiet Half* | Amazon: https://www.amazon.com/dp/B0HL5SMV4N | Google Play: https://play.google.com/store/books/details?id=GGKEY:T8CFE8L0S6Q
+- Duits: *Die stille Hälfte* | Amazon: https://www.amazon.de/dp/B0HL5QJB6Q | Google Play: https://play.google.com/store/books/details?id=GGKEY:SL0GXRXS86Z
+- Spaans: *La mitad silenciada* | Amazon: https://www.amazon.es/dp/B0HL67858S | Google Play: https://play.google.com/store/books/details?id=GGKEY:BJGARBCJXL3
+
+### Deel 5
+- Nederlands: *Beeldmateriaal* | Amazon: https://www.amazon.nl/dp/B0HM8CM6NR | Google Play: https://play.google.com/store/books/details?id=GGKEY:CKHCL4YPLBJ
+- Engels: *The Footage* | Amazon: https://www.amazon.com/dp/B0HMB5Z9V6 | Google Play: https://play.google.com/store/books/details?id=GGKEY:QFHBFLQKNF1
+- Duits: *Bildmaterial* | Google Play: https://play.google.com/store/books/details?id=GGKEY:3ZJG01P6S3H
+- Spaans: *La grabación* | Google Play: https://play.google.com/store/books/details?id=GGKEY:BZJR8HEEHKX
+
+## Pagina's
+
+- [Boeken](https://lowlandspress.com/): de vijf delen met korte omschrijving en winkels
+- [Over Lowlands Press](https://lowlandspress.com/over.html): wat de uitgeverij doet en hoe
+- [Contact en colofon](https://lowlandspress.com/contact.html): e-mail, KvK, recensie-exemplaren
+- [Privacy](https://lowlandspress.com/privacy.html): geen cookies, geen trackers
+- [Voorwaarden](https://lowlandspress.com/voorwaarden.html): auteursrecht en voorbehoud tekst- en datamining
+
+## Contact
+
+contact@lowlandspress.com
