@@ -12,14 +12,27 @@ KOP = {'nl': ('Proloog', 'Hoofdstuk 1'), 'en': ('Prologue', 'Chapter 1'),
 
 
 def _naar_html(tekst):
-    """Markdown-alinea's naar <p>. Alleen cursief; de manuscripten gebruiken niets anders."""
+    """Markdown-alinea's naar <p>. Cursief, en afgebakende blokken (logregels, transcripties)
+    als <pre>, want die staan in het manuscript tussen backticks en moeten hun regelafbreking
+    houden."""
     tekst = re.sub(r'^#.*$', '', tekst, flags=re.M)              # kop eraf
-    alineas = [a.strip() for a in re.split(r'\n\s*\n', tekst) if a.strip()]
     uit = []
-    for a in alineas:
-        a = H.escape(' '.join(a.split()))
-        a = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', a)
-        uit.append('<p>%s</p>' % a)
+    # eerst de blokken tussen ``` eruit lichten, de rest gewoon als alinea's
+    stukken = re.split(r'```', tekst)
+    for i, stuk in enumerate(stukken):
+        if i % 2 == 1:                                            # oneven = binnen de backticks
+            regels = [r.rstrip() for r in stuk.strip('\n').split('\n')]
+            if any(r.strip() for r in regels):
+                uit.append('<pre class="log">%s</pre>'
+                           % H.escape('\n'.join(regels).strip()))
+            continue
+        for a in re.split(r'\n\s*\n', stuk):
+            a = a.strip()
+            if not a:
+                continue
+            a = H.escape(' '.join(a.split()))
+            a = re.sub(r'\*([^*]+)\*', r'<em>\1</em>', a)
+            uit.append('<p>%s</p>' % a)
     return uit
 
 
