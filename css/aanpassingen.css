@@ -103,3 +103,10 @@
   font-size:14px !important; line-height:1.6 !important; max-width:460px;
   border-left:2px solid var(--line); padding-left:14px; margin:0 !important;
 }
+
+/* Bij een platte omslag (geen foto-mockup) zou het dossiernummer over de titel vallen.
+   Die omslagen krijgen daarom een eigen strook links; het script telt die breedte mee. */
+@media (min-width: 661px){
+  .cover-wrap:has(> .cover:not(.mockup)),
+  .cover-wrap:has(> .cover-volgt){ padding-left: 34px; }
+}
