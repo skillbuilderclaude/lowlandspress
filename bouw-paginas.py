@@ -137,9 +137,23 @@ staat hier een vestigingsplaats en geen bezoekadres.</p>
  'privacy': ('Privacyverklaring | Lowlands Press',
   'Deze site verzamelt geen persoonsgegevens, gebruikt geen cookies en laadt geen trackers van derden.',
   'PRIVACY', 'Wat deze site van u bewaart.', '''
-<p class="lead">Deze website verzamelt zelf geen persoonsgegevens. Er staan geen formulieren
-op, geen cookies voor advertenties of statistiek, en geen trackers van derden. U kunt de site
-lezen zonder iets achter te laten.</p>
+<p class="lead">Deze website gebruikt geen cookies, slaat niets op in uw browser en laat geen
+enkele advertentie- of volgdienst toe. Wel tellen wij hoe vaak een pagina wordt bekeken, op een
+server die wij zelf beheren. Hieronder staat precies wat daarbij wordt bewaard.</p>
+
+<h2>De bezoekersteller</h2>
+<p>Bij het openen van een pagina gaat er één verzoek naar onze eigen teller. Daarbij leggen wij
+vast: welke pagina, in welke taal, op welk tijdstip, en van welke site u kwam (de verwijzer),
+plus een eventueel merkteken in de link waarmee wij zien of u via bijvoorbeeld Instagram
+binnenkwam.</p>
+<p><strong>Uw IP-adres wordt niet opgeslagen.</strong> Om te kunnen tellen hoeveel verschillende
+mensen langskwamen in plaats van alleen hoeveel klikken er waren, berekenen wij uit uw IP-adres
+en uw browser een onleesbare code, met een geheim getal dat elke dag wisselt. Daardoor is die
+code niet terug te rekenen naar u, en herkent hij u morgen niet meer. Er wordt niets gedeeld met
+derden, er is geen profiel en er is geen advertentienetwerk bij betrokken.</p>
+<p>De teller draait op een eigen machine in Nederland, bereikbaar via
+<code>transcriptie.tail3ce102.ts.net</code>. Wilt u niet geteld worden, dan is de teller geblokkeerd
+zodra u JavaScript uitzet of een blokkeerder gebruikt; de site werkt dan gewoon door.</p>
 <h2>Wat er wel wordt vastgelegd</h2>
 <p>De site wordt gehost op GitHub Pages. Zoals elke webserver legt die host technische gegevens
 vast van elk bezoek, waaronder uw IP-adres, het tijdstip, de opgevraagde pagina en uw browser.
@@ -147,8 +161,8 @@ Die gegevens worden door de host gebruikt om de site uit te leveren en misbruik 
 Lowlands Press heeft er geen toegang toe en gebruikt ze niet.</p>
 <h2>Lettertypen en afbeeldingen</h2>
 <p>De lettertypen en afbeeldingen worden vanaf deze site zelf geladen, niet vanaf Google Fonts
-of een ander extern netwerk. Daardoor gaat er bij het openen van een pagina geen verzoek naar
-een derde partij.</p>
+of een ander extern netwerk. Buiten de teller hierboven gaat er bij het openen van een pagina
+dus geen enkel verzoek naar een andere partij.</p>
 <h2>Links naar winkels</h2>
 <p>De knoppen bij elk boek verwijzen naar Amazon, Google Play Boeken, Kobo, bol.com en andere
 winkels. Zodra u op zo'n knop klikt, verlaat u deze site en gelden de privacyvoorwaarden van
@@ -266,9 +280,22 @@ a place of business rather than a street address.</p>
  'privacy': ('Privacy | Lowlands Press',
   'This site collects no personal data, uses no cookies and loads no third-party trackers.',
   'PRIVACY', 'What this site keeps about you.', '''
-<p class="lead">This website collects no personal data of its own. There are no forms on it, no
-advertising or analytics cookies, and no third-party trackers. You can read the site without
-leaving anything behind.</p>
+<p class="lead">This website uses no cookies, stores nothing in your browser and allows no
+advertising or tracking service of any kind. We do count how often a page is read, on a server
+we run ourselves. What that records is set out below.</p>
+
+<h2>The visitor counter</h2>
+<p>Opening a page sends one request to our own counter. It records which page, in which
+language, at what time, and which site you came from (the referrer), plus any tag in the link
+that tells us whether you arrived from, say, Instagram.</p>
+<p><strong>Your IP address is not stored.</strong> To count how many different people came
+rather than merely how many clicks there were, we derive an unreadable code from your IP address
+and your browser, using a secret number that changes every day. That code cannot be turned back
+into you, and tomorrow it no longer recognises you. Nothing is shared with anyone, there is no
+profile, and no advertising network is involved.</p>
+<p>The counter runs on our own machine in the Netherlands, reachable at
+<code>transcriptie.tail3ce102.ts.net</code>. If you would rather not be counted, turning off
+JavaScript or using a blocker stops it; the site works as normal either way.</p>
 <h2>What is recorded</h2>
 <p>The site is hosted on GitHub Pages. Like any web server, that host records technical details
 of each visit, including your IP address, the time, the page requested and your browser. The
@@ -276,7 +303,8 @@ host uses those records to deliver the site and to prevent abuse. Lowlands Press
 to them and does not use them.</p>
 <h2>Fonts and images</h2>
 <p>Fonts and images are served from this site itself, not from Google Fonts or any other
-external network. Opening a page therefore sends no request to a third party.</p>
+external network. Apart from the counter above, opening a page therefore sends no request to
+anyone else.</p>
 <h2>Links to stores</h2>
 <p>The buttons on each book lead to Amazon, Google Play Books, Kobo, bol.com and other stores.
 The moment you click one, you leave this site and that store's privacy terms apply. Lowlands
@@ -393,9 +421,23 @@ hier ein Sitz und keine Hausanschrift.</p>
  'privacy': ('Datenschutz | Lowlands Press',
   'Diese Website erhebt keine personenbezogenen Daten, setzt keine Cookies und lädt keine Tracker Dritter.',
   'DATENSCHUTZ', 'Was diese Seite über Sie behält.', '''
-<p class="lead">Diese Website erhebt selbst keine personenbezogenen Daten. Es gibt keine
-Formulare, keine Cookies für Werbung oder Statistik und keine Tracker Dritter. Sie können die
-Seite lesen, ohne etwas zu hinterlassen.</p>
+<p class="lead">Diese Website setzt keine Cookies, speichert nichts in Ihrem Browser und lässt
+keinerlei Werbe- oder Trackingdienst zu. Wir zählen allerdings, wie oft eine Seite gelesen wird,
+auf einem Server, den wir selbst betreiben. Was dabei festgehalten wird, steht unten.</p>
+
+<h2>Der Besucherzähler</h2>
+<p>Beim Öffnen einer Seite geht eine Anfrage an unseren eigenen Zähler. Festgehalten werden:
+welche Seite, in welcher Sprache, zu welcher Zeit und von welcher Seite Sie kamen (der
+Referrer), dazu eine etwaige Markierung im Link, an der wir sehen, ob Sie etwa über Instagram
+gekommen sind.</p>
+<p><strong>Ihre IP-Adresse wird nicht gespeichert.</strong> Um zählen zu können, wie viele
+verschiedene Menschen da waren und nicht bloß wie viele Klicks, berechnen wir aus Ihrer
+IP-Adresse und Ihrem Browser einen unlesbaren Code, mit einer geheimen Zahl, die täglich
+wechselt. Dieser Code lässt sich nicht zu Ihnen zurückrechnen und erkennt Sie morgen nicht mehr.
+Nichts davon wird weitergegeben, es gibt kein Profil und kein Werbenetzwerk ist beteiligt.</p>
+<p>Der Zähler läuft auf einer eigenen Maschine in den Niederlanden, erreichbar unter
+<code>transcriptie.tail3ce102.ts.net</code>. Wer nicht gezählt werden möchte: mit abgeschaltetem
+JavaScript oder einem Blocker unterbleibt die Zählung, die Seite funktioniert trotzdem.</p>
 <h2>Was festgehalten wird</h2>
 <p>Die Seite liegt bei GitHub Pages. Wie jeder Webserver hält dieser Anbieter technische Daten
 jedes Aufrufs fest, darunter Ihre IP-Adresse, den Zeitpunkt, die aufgerufene Seite und Ihren
@@ -403,7 +445,8 @@ Browser. Der Anbieter nutzt diese Daten, um die Seite auszuliefern und Missbrauc
 Lowlands Press hat darauf keinen Zugriff und verwendet sie nicht.</p>
 <h2>Schriften und Bilder</h2>
 <p>Schriften und Bilder werden von dieser Seite selbst geladen, nicht von Google Fonts oder
-einem anderen externen Netz. Beim Öffnen einer Seite geht deshalb keine Anfrage an Dritte.</p>
+einem anderen externen Netz. Außer dem Zähler oben geht beim Öffnen einer Seite deshalb keine
+Anfrage an Dritte.</p>
 <h2>Links zu Shops</h2>
 <p>Die Schaltflächen bei jedem Buch führen zu Amazon, Google Play Bücher, Kobo, Thalia und
 weiteren Shops. Sobald Sie darauf klicken, verlassen Sie diese Seite, und es gelten die
@@ -526,9 +569,22 @@ una sede y no una dirección de visita.</p>
  'privacy': ('Privacidad | Lowlands Press',
   'Esta web no recoge datos personales, no usa cookies y no carga rastreadores de terceros.',
   'PRIVACIDAD', 'Qué guarda esta web sobre ti.', '''
-<p class="lead">Esta web no recoge datos personales por su cuenta. No hay formularios, ni
-cookies de publicidad o estadística, ni rastreadores de terceros. Puedes leerla sin dejar
-nada atrás.</p>
+<p class="lead">Esta web no usa cookies, no guarda nada en tu navegador y no admite ningún
+servicio de publicidad ni de rastreo. Sí contamos cuántas veces se lee una página, en un
+servidor que gestionamos nosotros. Abajo está exactamente lo que se registra.</p>
+
+<h2>El contador de visitas</h2>
+<p>Al abrir una página se envía una petición a nuestro propio contador. Se registra qué página,
+en qué idioma, a qué hora y desde qué sitio llegaste (el referente), más cualquier marca en el
+enlace que nos indique si vienes, por ejemplo, de Instagram.</p>
+<p><strong>Tu dirección IP no se guarda.</strong> Para poder contar cuántas personas distintas
+pasaron y no solo cuántos clics hubo, calculamos a partir de tu IP y tu navegador un código
+ilegible, con un número secreto que cambia cada día. Ese código no puede deshacerse hasta
+llegar a ti, y mañana ya no te reconoce. No se comparte con nadie, no hay perfil y no
+interviene ninguna red publicitaria.</p>
+<p>El contador funciona en una máquina propia en los Países Bajos, accesible en
+<code>transcriptie.tail3ce102.ts.net</code>. Si prefieres no ser contado, basta con desactivar
+JavaScript o usar un bloqueador; la web sigue funcionando igual.</p>
 <h2>Qué sí queda registrado</h2>
 <p>La web está alojada en GitHub Pages. Como cualquier servidor, ese proveedor registra datos
 técnicos de cada visita: tu dirección IP, la hora, la página solicitada y tu navegador. Los usa
@@ -536,7 +592,8 @@ para servir la web y para evitar abusos. Lowlands Press no tiene acceso a ellos 
 utiliza.</p>
 <h2>Tipografías e imágenes</h2>
 <p>Las tipografías y las imágenes se cargan desde esta misma web, no desde Google Fonts ni
-ninguna otra red externa. Abrir una página no envía por tanto ninguna petición a terceros.</p>
+ninguna otra red externa. Salvo el contador de arriba, abrir una página no envía ninguna
+petición a nadie más.</p>
 <h2>Enlaces a tiendas</h2>
 <p>Los botones de cada libro llevan a Amazon, Google Play Libros, Kobo, Apple Books y otras
 tiendas. En cuanto pulsas uno, sales de esta web y se aplican las condiciones de privacidad de

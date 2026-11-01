@@ -1,6 +1,7 @@
 {
-  "_over": "Bezoekersteller. Zolang 'endpoint' leeg is staat er geen enkel script op de site en blijft de privacyverklaring kloppen. Zet het adres erin en draai bouw-analytics.py; dat zet het script op alle pagina's en de privacytekst mee.",
-  "aanbieder": "goatcounter",
-  "endpoint": "",
-  "opmerking": "Bij GoatCounter is endpoint https://<naam>.goatcounter.com/count. Bij een eigen installatie het eigen adres; het script is identiek."
+ "_over": "Bezoekersteller. Eigen server op de Mac mini, publiek bereikbaar via Tailscale Funnel. Leeg endpoint = geen enkel script op de site.",
+ "aanbieder": "eigen",
+ "endpoint": "https://transcriptie.tail3ce102.ts.net/teller/p.gif",
+ "cijfers": "https://transcriptie.tail3ce102.ts.net/teller/cijfers.json?k=<sleutel uit ~/Boeken/teller/sleutel.txt>",
+ "opmerking": "Geen cookies, geen IP in de database. Unieke bezoekers via een hash van IP+browser met een zout dat dagelijks wisselt."
 }

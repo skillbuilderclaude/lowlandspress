@@ -14,9 +14,19 @@ CFG = json.load(open(os.path.join(HIER, '_analytics.json'), encoding='utf-8'))
 
 
 def blok(endpoint):
-    return (MERK +
-            '<script data-goatcounter="%s" async '
-            'src="//gc.zgo.at/count.js"></script>' % endpoint + MERK)
+    """Eén telverzoek per paginaweergave. Leest de verwijzer en een merkteken uit de link, zodat
+    herkomst (Instagram, Google, direct) te zien is. Geen cookie, geen opslag in de browser."""
+    js = ("(function(){try{"
+          "var q=new URLSearchParams(location.search),"
+          "u=new URL('%s');"
+          "u.searchParams.set('u',location.pathname);"
+          "if(document.referrer)u.searchParams.set('r',document.referrer);"
+          "var s=q.get('utm_source')||q.get('bron');if(s)u.searchParams.set('s',s);"
+          "var c=q.get('utm_content')||q.get('utm_campaign');if(c)u.searchParams.set('c',c);"
+          "new Image().src=u.toString();}catch(e){}})();" % endpoint)
+    return (MERK + '<script>' + js + '</script>'
+            + '<noscript><img src="' + endpoint + '?u=zonder-js" alt="" width="1" height="1"'
+              ' style="position:absolute;left:-9999px"/></noscript>' + MERK)
 
 
 def paginas():
