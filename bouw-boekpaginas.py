@@ -170,10 +170,14 @@ def bouw(n, taal):
     voor = '../' * (MAP[taal].count('/'))
     omslag = voor + 'covers/%s-%d.jpg' % (taal, n)
     mock = (TEKST[n].get('mockup') if n in TEKST else None)
-    if taal == 'nl' and mock:
+    if n == 6 and taal == 'nl':
+        omslag = voor + 'mockups/nl-bekend-gezicht-smartdoorbell-mockup-v1.png'
+    elif taal == 'nl' and mock:
         omslag = voor + mock
     pitch = tek.get('pitch') or ''
     oms = (' '.join(ed['flaptekst'])[:300] if ed.get('flaptekst') else pitch)
+    social_image = (BASIS + 'mockups/nl-bekend-gezicht-smartdoorbell-mockup-v1.png'
+                    if n == 6 and taal == 'nl' else BASIS + 'img/deelkaart.png')
 
     alt = ''.join('<link rel="alternate" hreflang="%s" href="%s%s%s.html"/>'
                   % (t, BASIS, MAP[t], SLUGS[(n, t)]) for t in TALEN if (n, t) in SLUGS)
@@ -191,9 +195,9 @@ def bouw(n, taal):
 <meta property="og:description" content="{e(oms[:250])}"/>
 <meta property="og:url" content="{url}"/><meta property="og:type" content="book"/>
 <meta property="og:site_name" content="Lowlands Press"/><meta property="og:locale" content="{LOCALE[taal]}"/>
-<meta property="og:image" content="{BASIS}img/deelkaart.png"/>
+<meta property="og:image" content="{social_image}"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="{BASIS}img/deelkaart.png"/>
+<meta name="twitter:image" content="{social_image}"/>
 {alt}<link rel="canonical" href="{url}"/>
 {schema(n, taal, url)}</head>
 <body><main>

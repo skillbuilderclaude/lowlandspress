@@ -20,7 +20,9 @@ BOEKEN = BOEKEN + [{'n': 6}, {'n': 7}]
 
 # ---- deel 6 en 7: aangekondigd, staan niet in _teksten.json ----
 EXTRA = {
- 6: {'omslag': 'covers/nl-bekend-gezicht.jpg', 'status': 'binnenkort',
+ 6: {'omslag': 'covers/nl-bekend-gezicht.jpg',
+     'mockup': 'mockups/nl-bekend-gezicht-smartdoorbell-mockup-v1.png',
+     'status': 'binnenkort',
      'nl': ('Bekend Gezicht', 'De deurbel van de buurvrouw zet een naam onder de man op de stoep. Alleen is hij het niet.',
             'Het manuscript is af in het Nederlands, Engels, Duits en Spaans. De editie wacht op de laatste stap bij de winkels.'),
      'en': ('Familiar Face', "The neighbour's doorbell puts a name to the man on the step. It isn't him.",
@@ -154,7 +156,11 @@ def kaart(taal, boek, voor):
     if n in EXTRA:
         x = EXTRA[n]
         titel, pitch, status = x[taal]
-        if x['omslag']:
+        if taal == 'nl' and x.get('mockup'):
+            beeld = ('<img src="%s%s" alt="%s, C.M.R. Thorne" class="cover mockup" '
+                     'width="1122" height="1402" loading="lazy"/>'
+                     % (voor, x['mockup'], e(titel)))
+        elif x['omslag']:
             beeld = ('<img src="%scovers/%s-%d.jpg" alt="%s, C.M.R. Thorne" class="cover" width="625" height="1000" loading="lazy"/>'
                      % (voor, taal, n, e(titel)))
         else:
