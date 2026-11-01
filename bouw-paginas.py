@@ -151,9 +151,9 @@ mensen langskwamen in plaats van alleen hoeveel klikken er waren, berekenen wij 
 en uw browser een onleesbare code, met een geheim getal dat elke dag wisselt. Daardoor is die
 code niet terug te rekenen naar u, en herkent hij u morgen niet meer. Er wordt niets gedeeld met
 derden, er is geen profiel en er is geen advertentienetwerk bij betrokken.</p>
-<p>De teller draait op een eigen machine in Nederland, bereikbaar via
-<code>transcriptie.tail3ce102.ts.net</code>. Wilt u niet geteld worden, dan is de teller geblokkeerd
-zodra u JavaScript uitzet of een blokkeerder gebruikt; de site werkt dan gewoon door.</p>
+<p>De teller draait op een eigen server in Nederland, in beheer van de uitgeverij. Er komt geen
+analysedienst of advertentienetwerk aan te pas. Wilt u niet geteld worden, dan volstaat een
+blokkeerder of JavaScript uitzetten; de site werkt gewoon door.</p>
 <h2>Wat er wel wordt vastgelegd</h2>
 <p>De site wordt gehost op GitHub Pages. Zoals elke webserver legt die host technische gegevens
 vast van elk bezoek, waaronder uw IP-adres, het tijdstip, de opgevraagde pagina en uw browser.
@@ -293,9 +293,9 @@ rather than merely how many clicks there were, we derive an unreadable code from
 and your browser, using a secret number that changes every day. That code cannot be turned back
 into you, and tomorrow it no longer recognises you. Nothing is shared with anyone, there is no
 profile, and no advertising network is involved.</p>
-<p>The counter runs on our own machine in the Netherlands, reachable at
-<code>transcriptie.tail3ce102.ts.net</code>. If you would rather not be counted, turning off
-JavaScript or using a blocker stops it; the site works as normal either way.</p>
+<p>The counter runs on our own server in the Netherlands, operated by the publisher. No
+analytics service and no advertising network is involved. If you would rather not be counted, a
+blocker or turning off JavaScript stops it; the site works as normal either way.</p>
 <h2>What is recorded</h2>
 <p>The site is hosted on GitHub Pages. Like any web server, that host records technical details
 of each visit, including your IP address, the time, the page requested and your browser. The
@@ -435,9 +435,10 @@ verschiedene Menschen da waren und nicht bloß wie viele Klicks, berechnen wir a
 IP-Adresse und Ihrem Browser einen unlesbaren Code, mit einer geheimen Zahl, die täglich
 wechselt. Dieser Code lässt sich nicht zu Ihnen zurückrechnen und erkennt Sie morgen nicht mehr.
 Nichts davon wird weitergegeben, es gibt kein Profil und kein Werbenetzwerk ist beteiligt.</p>
-<p>Der Zähler läuft auf einer eigenen Maschine in den Niederlanden, erreichbar unter
-<code>transcriptie.tail3ce102.ts.net</code>. Wer nicht gezählt werden möchte: mit abgeschaltetem
-JavaScript oder einem Blocker unterbleibt die Zählung, die Seite funktioniert trotzdem.</p>
+<p>Der Zähler läuft auf einem eigenen Server in den Niederlanden, betrieben vom Verlag. Ein
+Analysedienst oder Werbenetzwerk ist nicht beteiligt. Wer nicht gezählt werden möchte: mit einem
+Blocker oder abgeschaltetem JavaScript unterbleibt die Zählung, die Seite funktioniert
+trotzdem.</p>
 <h2>Was festgehalten wird</h2>
 <p>Die Seite liegt bei GitHub Pages. Wie jeder Webserver hält dieser Anbieter technische Daten
 jedes Aufrufs fest, darunter Ihre IP-Adresse, den Zeitpunkt, die aufgerufene Seite und Ihren
@@ -582,9 +583,9 @@ pasaron y no solo cuántos clics hubo, calculamos a partir de tu IP y tu navegad
 ilegible, con un número secreto que cambia cada día. Ese código no puede deshacerse hasta
 llegar a ti, y mañana ya no te reconoce. No se comparte con nadie, no hay perfil y no
 interviene ninguna red publicitaria.</p>
-<p>El contador funciona en una máquina propia en los Países Bajos, accesible en
-<code>transcriptie.tail3ce102.ts.net</code>. Si prefieres no ser contado, basta con desactivar
-JavaScript o usar un bloqueador; la web sigue funcionando igual.</p>
+<p>El contador funciona en un servidor propio en los Países Bajos, gestionado por la
+editorial. No interviene ningún servicio de analítica ni red publicitaria. Si prefieres no ser
+contado, basta con un bloqueador o desactivar JavaScript; la web sigue funcionando igual.</p>
 <h2>Qué sí queda registrado</h2>
 <p>La web está alojada en GitHub Pages. Como cualquier servidor, ese proveedor registra datos
 técnicos de cada visita: tu dirección IP, la hora, la página solicitada y tu navegador. Los usa
