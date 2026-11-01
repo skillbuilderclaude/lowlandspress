@@ -1,0 +1,6 @@
+{
+  "_over": "Bezoekersteller. Zolang 'endpoint' leeg is staat er geen enkel script op de site en blijft de privacyverklaring kloppen. Zet het adres erin en draai bouw-analytics.py; dat zet het script op alle pagina's en de privacytekst mee.",
+  "aanbieder": "goatcounter",
+  "endpoint": "",
+  "opmerking": "Bij GoatCounter is endpoint https://<naam>.goatcounter.com/count. Bij een eigen installatie het eigen adres; het script is identiek."
+}
