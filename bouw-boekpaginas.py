@@ -10,6 +10,12 @@ TALEN = ['nl', 'en', 'de', 'es']
 LOCALE = {'nl': 'nl_NL', 'en': 'en_US', 'de': 'de_DE', 'es': 'es_ES'}
 MAP = {'nl': 'boek/', 'en': 'en/book/', 'de': 'de/buch/', 'es': 'es/libro/'}
 MARKT = {'nl': 'amazon.nl', 'en': 'amazon.com', 'de': 'amazon.de', 'es': 'amazon.es'}
+DEEL6_MOCKUP = {
+    'nl': 'mockups/nl-bekend-gezicht-smartdoorbell-mockup-v1.png',
+    'en': 'mockups/en-familiar-face-smartdoorbell-mockup-v1.png',
+    'de': 'mockups/de-bekanntes-gesicht-smartdoorbell-mockup-v1.png',
+    'es': 'mockups/es-rostro-conocido-smartdoorbell-mockup-v1.png',
+}
 # Deel 7 is nog niet goedgekeurd voor publicatie: geen pagina, geen fragment.
 TOT = 6
 
@@ -170,14 +176,14 @@ def bouw(n, taal):
     voor = '../' * (MAP[taal].count('/'))
     omslag = voor + 'covers/%s-%d.jpg' % (taal, n)
     mock = (TEKST[n].get('mockup') if n in TEKST else None)
-    if n == 6 and taal == 'nl':
-        omslag = voor + 'mockups/nl-bekend-gezicht-smartdoorbell-mockup-v1.png'
+    if n == 6:
+        omslag = voor + DEEL6_MOCKUP[taal]
     elif taal == 'nl' and mock:
         omslag = voor + mock
     pitch = tek.get('pitch') or ''
     oms = (' '.join(ed['flaptekst'])[:300] if ed.get('flaptekst') else pitch)
-    social_image = (BASIS + 'mockups/nl-bekend-gezicht-smartdoorbell-mockup-v1.png'
-                    if n == 6 and taal == 'nl' else BASIS + 'img/deelkaart.png')
+    social_image = (BASIS + DEEL6_MOCKUP[taal]
+                    if n == 6 else BASIS + 'img/deelkaart.png')
 
     alt = ''.join('<link rel="alternate" hreflang="%s" href="%s%s%s.html"/>'
                   % (t, BASIS, MAP[t], SLUGS[(n, t)]) for t in TALEN if (n, t) in SLUGS)
