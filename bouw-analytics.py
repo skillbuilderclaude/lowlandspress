@@ -40,11 +40,17 @@ def blok(endpoint):
               ' style="position:absolute;left:-9999px"/></noscript>' + MERK)
 
 
+# insta/index.html meldt zichzelf al aan de teller, met bron en post erbij; die mag er niet
+# nog een keer de standaardmelding bij krijgen, anders telt elk bezoek dubbel.
+OVERSLAAN = {os.path.join(HIER, 'insta', 'index.html')}
+
+
 def paginas():
     uit = []
     for patroon in ('*.html', '*/*.html', '*/*/*.html'):
         uit += glob.glob(os.path.join(HIER, patroon))
-    return sorted(p for p in uit if not os.path.basename(p).startswith('_'))
+    return sorted(p for p in uit
+                  if not os.path.basename(p).startswith('_') and p not in OVERSLAAN)
 
 
 def zet(endpoint):

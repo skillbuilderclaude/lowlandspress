@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="nl"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Lowlands Press</title>
+<link rel="canonical" href="https://lowlandspress.com/"/>
+<style>
+ html{background:#080d0e}
+ body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+      background:#080d0e;color:#9aa3a2;font:14px/1.6 -apple-system,BlinkMacSystemFont,sans-serif}
+ a{color:#f0eee7}
+</style>
+<script>
+(function(){
+  var TELLER = 'https://transcriptie.tail3ce102.ts.net/teller/p.gif';
+  var q = new URLSearchParams(location.search);
+  // waar gaat de bezoeker heen: ?to=/boek/... of anders de voorpagina
+  var to = q.get('to') || '/';
+  if (to.charAt(0) !== '/') { to = '/'; }                  // alleen eigen paden
+  // welke post of plek: ?p=deel6, anders 'bio'
+  var post = (q.get('p') || location.hash.replace('#','') || 'bio').slice(0, 40);
+  try {
+    var u = new URL(TELLER);
+    u.searchParams.set('u', to);
+    u.searchParams.set('s', 'instagram');
+    u.searchParams.set('c', post);
+    if (document.referrer) u.searchParams.set('r', document.referrer);
+    if (navigator.sendBeacon) { navigator.sendBeacon(u.toString()); }
+    else { new Image().src = u.toString(); }
+  } catch (e) {}
+  location.replace(to);                                     // geen extra stap in de geschiedenis
+})();
+</script>
+</head><body>
+<p>Een ogenblik, je wordt doorgestuurd naar <a href="/">lowlandspress.com</a>.</p>
+</body></html>
