@@ -42,7 +42,8 @@ def blok(endpoint):
 
 # insta/index.html meldt zichzelf al aan de teller, met bron en post erbij; die mag er niet
 # nog een keer de standaardmelding bij krijgen, anders telt elk bezoek dubbel.
-OVERSLAAN = {os.path.join(HIER, 'insta', 'index.html')}
+OVERSLAAN = {os.path.join(HIER, 'insta', 'index.html'),
+             os.path.join(HIER, 'googlef1144064a1089feb.html')}
 
 
 def paginas():
