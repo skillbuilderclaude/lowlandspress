@@ -341,19 +341,19 @@
      "titel": "Bildmaterial",
      "pitch": "Ein alter Dashcam-Clip beweist: Die Ermittlungen zum Tod von Niek Veldkamp beruhen auf der falschen Uhrzeit.",
      "links": {
-      "amazon": null,
+      "amazon": "https://www.amazon.de/dp/B0HMNJZVC6",
       "googleplay": "https://play.google.com/store/books/details?id=M5wXEgAAQBAJ",
-      "overig": null,
-      "paperback": null
+      "overig": "https://www.kobo.com/de/de/search?query=9798235182134",
+      "paperback": "https://www.amazon.de/dp/B0HNWXQXL6"
      }
     },
     "es": {
      "titel": "La grabación",
      "pitch": "Un clip de dashcam demuestra que la investigación de la muerte de Niek Veldkamp partió de la hora equivocada.",
      "links": {
-      "amazon": null,
+      "amazon": "https://www.amazon.es/dp/B0HNWVK6ZR",
       "googleplay": "https://play.google.com/store/books/details?id=V5wXEgAAQBAJ",
-      "overig": null,
+      "overig": "https://www.kobo.com/es/es/search?query=9798237023299",
       "paperback": null
      }
     }
