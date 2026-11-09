@@ -175,10 +175,11 @@ def bouw(n, taal):
     url = BASIS + MAP[taal] + s + '.html'
     voor = '../' * (MAP[taal].count('/'))
     omslag = voor + 'covers/%s-%d.jpg' % (taal, n)
-    mock = (TEKST[n].get('mockup') if n in TEKST else None)
+    tb = TEKST.get(n) or {}
+    mock = (tb.get('mockups') or {}).get(taal) or (tb.get('mockup') if taal == 'nl' else None)
     if n == 6:
         omslag = voor + DEEL6_MOCKUP[taal]
-    elif taal == 'nl' and mock:
+    elif mock:
         omslag = voor + mock
     pitch = tek.get('pitch') or ''
     oms = (' '.join(ed['flaptekst'])[:300] if ed.get('flaptekst') else pitch)

@@ -98,6 +98,12 @@
    "n": 1,
    "slug": "huis",
    "mockup": "mockups/nl-het-huis-weet-het-mockup-v1.png",
+   "mockups": {
+    "nl": "mockups/nl-het-huis-weet-het-mockup-v1.png",
+    "en": "mockups/en-the-house-never-lies-mockup-v1.png",
+    "de": "mockups/de-das-haus-sieht-alles-mockup-v1.png",
+    "es": "mockups/es-la-casa-lo-ve-todo-mockup-v1.png"
+   },
    "ed": {
     "nl": {
      "titel": "Het Huis Weet Het",
@@ -145,6 +151,12 @@
    "n": 2,
    "slug": "vrijgave",
    "mockup": "mockups/nl-de-vrijgave-mockup-v1.png",
+   "mockups": {
+    "nl": "mockups/nl-de-vrijgave-mockup-v1.png",
+    "en": "mockups/en-the-release-mockup-v1.png",
+    "de": "mockups/de-die-freigabe-mockup-v1.png",
+    "es": "mockups/es-el-visto-bueno-mockup-v1.png"
+   },
    "ed": {
     "nl": {
      "titel": "De Vrijgave",
@@ -192,6 +204,12 @@
    "n": 3,
    "slug": "polsslag",
    "mockup": "mockups/nl-polsslag-mockup-v1.png",
+   "mockups": {
+    "nl": "mockups/nl-polsslag-mockup-v1.png",
+    "en": "mockups/en-twelve-past-six-mockup-v1.png",
+    "de": "mockups/de-das-herz-luegt-nie-mockup-v1.png",
+    "es": "mockups/es-la-letra-del-corazon-mockup-v1.png"
+   },
    "ed": {
     "nl": {
      "titel": "Polsslag",
@@ -239,6 +257,12 @@
    "n": 4,
    "slug": "stille-helft",
    "mockup": "mockups/nl-de-stille-helft-mockup-v1.png",
+   "mockups": {
+    "nl": "mockups/nl-de-stille-helft-mockup-v1.png",
+    "en": "mockups/en-the-quiet-half-mockup-v1.png",
+    "de": "mockups/de-die-stille-haelfte-mockup-v1.png",
+    "es": "mockups/es-la-mitad-silenciada-mockup-v1.png"
+   },
    "ed": {
     "nl": {
      "titel": "De Stille Helft",
@@ -286,6 +310,12 @@
    "n": 5,
    "slug": "beeldmateriaal",
    "mockup": "mockups/nl-beeldmateriaal-mockup-v1.png",
+   "mockups": {
+    "nl": "mockups/nl-beeldmateriaal-mockup-v1.png",
+    "en": "mockups/en-the-footage-mockup-v1.png",
+    "de": "mockups/de-bildmaterial-mockup-v1.png",
+    "es": "mockups/es-la-grabacion-mockup-v1.png"
+   },
    "ed": {
     "nl": {
      "titel": "Beeldmateriaal",

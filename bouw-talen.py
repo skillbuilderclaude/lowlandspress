@@ -191,8 +191,8 @@ def kaart(taal, boek, voor):
 
     ed = boek['ed'][taal]
     titel, pitch, links = ed['titel'], ed['pitch'], ed['links']
-    mock = boek.get('mockup')
-    if taal == 'nl' and mock:
+    mock = (boek.get('mockups') or {}).get(taal) or (boek.get('mockup') if taal == 'nl' else None)
+    if mock:
         beeld = '<img src="%s%s" alt="%s, C.M.R. Thorne" class="cover mockup"/>' % (voor, mock, e(titel))
     else:
         beeld = ('<img src="%scovers/%s-%d.jpg" alt="%s, C.M.R. Thorne" class="cover" width="625" height="1000" loading="lazy"/>'
