@@ -358,6 +358,59 @@
      }
     }
    }
+  },
+  {
+   "n": 6,
+   "slug": "bekend-gezicht",
+   "mockup": "mockups/nl-bekend-gezicht-smartdoorbell-mockup-v1.png",
+   "mockups": {
+    "nl": "mockups/nl-bekend-gezicht-smartdoorbell-mockup-v1.png",
+    "en": "mockups/en-familiar-face-smartdoorbell-mockup-v1.png",
+    "de": "mockups/de-bekanntes-gesicht-smartdoorbell-mockup-v1.png",
+    "es": "mockups/es-rostro-conocido-smartdoorbell-mockup-v1.png"
+   },
+   "ed": {
+    "nl": {
+     "titel": "Bekend Gezicht",
+     "pitch": "De deurbel van de buurvrouw zet een naam onder de man op de stoep. Alleen is hij het niet.",
+     "links": {
+      "amazon": "https://www.amazon.nl/dp/B0HRLRQT9L",
+      "googleplay": null,
+      "overig": null,
+      "paperback": "https://www.amazon.nl/dp/B0HQV6ZBWJ"
+     }
+    },
+    "en": {
+     "titel": "Familiar Face",
+     "pitch": "The neighbour's doorbell puts a name to the man on the step. It isn't him.",
+     "links": {
+      "amazon": "https://www.amazon.com/dp/B0HRV2DMVN",
+      "googleplay": null,
+      "overig": null,
+      "paperback": "https://www.amazon.com/dp/B0HPVT557H"
+     }
+    },
+    "de": {
+     "titel": "Bekanntes Gesicht",
+     "pitch": "Die Türklingel der Nachbarin setzt einen Namen unter den Mann auf der Treppe. Nur ist er es nicht.",
+     "links": {
+      "amazon": "https://www.amazon.de/dp/B0HRS8JCDR",
+      "googleplay": null,
+      "overig": null,
+      "paperback": "https://www.amazon.de/dp/B0HPVCV7B7"
+     }
+    },
+    "es": {
+     "titel": "Rostro conocido",
+     "pitch": "El timbre de la vecina pone un nombre al hombre que está en la puerta. Pero no es él.",
+     "links": {
+      "amazon": null,
+      "googleplay": null,
+      "overig": null,
+      "paperback": "https://www.amazon.es/dp/B0HQV89SQB"
+     }
+    }
+   }
   }
  ]
 }

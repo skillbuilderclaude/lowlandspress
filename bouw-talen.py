@@ -15,29 +15,11 @@ _sp = os.path.join(HIER, '_slugs.json')
 SLUGS = json.load(open(_sp, encoding='utf-8')) if os.path.exists(_sp) else {}
 UI = D['ui']
 BOEKEN = sorted(D['boeken'], key=lambda b: b['n'])
-# deel 6 en 7 staan niet in _teksten.json; ze komen uit EXTRA hieronder
-BOEKEN = BOEKEN + [{'n': 6}, {'n': 7}]
+# deel 7 staat niet in _teksten.json; dat komt uit EXTRA hieronder
+BOEKEN = BOEKEN + [{'n': 7}]
 
-# ---- deel 6 en 7: aangekondigd, staan niet in _teksten.json ----
+# ---- deel 7: aangekondigd, staat niet in _teksten.json ----
 EXTRA = {
- 6: {'omslag': 'covers/nl-bekend-gezicht.jpg',
-     'mockups': {
-       'nl': 'mockups/nl-bekend-gezicht-smartdoorbell-mockup-v1.png',
-       'en': 'mockups/en-familiar-face-smartdoorbell-mockup-v1.png',
-       'de': 'mockups/de-bekanntes-gesicht-smartdoorbell-mockup-v1.png',
-       'es': 'mockups/es-rostro-conocido-smartdoorbell-mockup-v1.png',
-     },
-     'status': 'binnenkort',
-     'nl': ('Bekend Gezicht', 'De deurbel van de buurvrouw zet een naam onder de man op de stoep. Alleen is hij het niet.',
-            'Het manuscript is af in het Nederlands, Engels, Duits en Spaans. De editie wacht op de laatste stap bij de winkels.'),
-     'en': ('Familiar Face', "The neighbour's doorbell puts a name to the man on the step. It isn't him.",
-            'The paperback is out. The ebook follows shortly.'),
-     'de': ('Bekanntes Gesicht', 'Die Türklingel der Nachbarin setzt einen Namen unter den Mann auf der Treppe. Nur ist er es nicht.',
-            'Das Taschenbuch ist erschienen. Das E-Book folgt in Kürze.'),
-     'es': ('Rostro conocido', 'El timbre de la vecina pone un nombre al hombre que está en la puerta. Pero no es él.',
-            'El manuscrito está terminado en neerlandés, inglés, alemán y español. La edición espera el último paso en las tiendas.'),
-     'links': {'en': {'paperback': 'https://www.amazon.com/dp/B0HPVT557H'},
-               'de': {'paperback': 'https://www.amazon.de/dp/B0HPVCV7B7'}}},
  7: {'omslag': None, 'status': 'voorbereiding',
      'nl': ('Poorttijd', 'Een schoolpasje registreerde wie er die middag naar binnen ging. Haar eigen scan staat op het verkeerde uur.',
             'Deel zeven wordt geschreven. Verschijningsdatum nog niet bekend.'),
@@ -54,7 +36,7 @@ LABEL = {
 }
 OMSLAG_VOLGT = {'nl': 'OMSLAG<br/>VOLGT', 'en': 'COVER<br/>TO COME',
                 'de': 'COVER<br/>FOLGT', 'es': 'PORTADA<br/>PENDIENTE'}
-# teller in de kop: zeven delen, vijf te koop
+# teller in de kop: zeven delen, zes te koop
 HERO = {
  'nl': ('DE THORNE-THRILLERS', 'Zeven zaken. Eén terugkerende rechercheur.',
         'Psychologische thrillers van C.M.R. Thorne, in vier talen. In elk deel keek er een '
@@ -71,11 +53,11 @@ HERO = {
 }
 KOP = {
  'en': ('Seven villages where a device was watching.', 'Seven cases. One recurring detective.',
-        'The first five books are published in Dutch, English, German and Spanish. Which editions are on sale, ebook or print, differs per store and per language.'),
+        'The first six books are published in Dutch, English, German and Spanish. Which editions are on sale, ebook or print, differs per store and per language.'),
  'de': ('Sieben Dörfer, in denen ein Gerät mitgesehen hat.', 'Sieben Fälle. Eine Ermittlerin, die wiederkommt.',
-        'Die ersten fünf Bände erscheinen auf Niederländisch, Englisch, Deutsch und Spanisch. Welche Ausgaben lieferbar sind, E-Book oder Print, hängt von Shop und Sprache ab.'),
+        'Die ersten sechs Bände erscheinen auf Niederländisch, Englisch, Deutsch und Spanisch. Welche Ausgaben lieferbar sind, E-Book oder Print, hängt von Shop und Sprache ab.'),
  'es': ('Siete pueblos donde un aparato estaba mirando.', 'Siete casos. Una investigadora que siempre vuelve.',
-        'Los cinco primeros libros se publican en neerlandés, inglés, alemán y español. Qué ediciones hay a la venta, digital o en papel, depende de la tienda y del idioma.'),
+        'Los seis primeros libros se publican en neerlandés, inglés, alemán y español. Qué ediciones hay a la venta, digital o en papel, depende de la tienda y del idioma.'),
 }
 META = {
  'en': ('Lowlands Press', 'Lowlands Press is an independent publisher in the south-west of the Netherlands. Books in Dutch, English, German and Spanish, starting with the Thorne thrillers by C.M.R. Thorne.'),
@@ -199,6 +181,12 @@ def kaart(taal, boek, voor):
                  % (voor, taal, n, e(titel)))
 
     knoppen = []
+    if not links.get('amazon') and links.get('paperback'):
+        # Editie die alleen als paperback te koop is: dan is dat de hoofdknop.
+        knoppen.append('<a class="primary" href="%s" target="_blank" rel="noreferrer">%s<svg class="pijl" viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path d="M2.6 7.4 7.4 2.6M3.8 2.6h3.6v3.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>'
+                       % (links['paperback'], e(ui['bekijkOpAmazon'])))
+        knoppen.append('<div class="format-group" aria-label="%s"><a href="%s" target="_blank" rel="noreferrer">%s</a></div>'
+                       % (e(ui['paperback']), links['paperback'], e(ui['paperback'])))
     if links.get('amazon'):
         knoppen.append('<a class="primary" href="%s" target="_blank" rel="noreferrer">%s<svg class="pijl" viewBox="0 0 10 10" aria-hidden="true" focusable="false"><path d="M2.6 7.4 7.4 2.6M3.8 2.6h3.6v3.6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></a>'
                        % (links['amazon'], e(ui['bekijkOpAmazon'])))
@@ -296,7 +284,7 @@ def bouw(taal):
     # feitenblok: zonder eigen kop (die staat nu in de hero) en vóór de boekenlijst
     a = h.find('<section class="series-note"'); b = h.find('</section>', a) + 10
     talentekst = (KOP[taal][2] if taal != 'nl' else
-                  'De eerste vijf delen zijn verkrijgbaar in het Nederlands, Engels, Duits '
+                  'De eerste zes delen zijn verkrijgbaar in het Nederlands, Engels, Duits '
                   'en Spaans. Het aanbod van e-book en print verschilt per winkel en taal.')
     feiten = ('<section class="series-note" id="series"><dl class="series-facts">'
               '<div><dt>%s</dt><dd>%s</dd></div><div><dt>%s</dt><dd>%s</dd></div>'
