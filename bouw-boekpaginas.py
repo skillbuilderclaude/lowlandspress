@@ -10,6 +10,8 @@ TALEN = ['nl', 'en', 'de', 'es']
 LOCALE = {'nl': 'nl_NL', 'en': 'en_US', 'de': 'de_DE', 'es': 'es_ES'}
 MAP = {'nl': 'boek/', 'en': 'en/book/', 'de': 'de/buch/', 'es': 'es/libro/'}
 MARKT = {'nl': 'amazon.nl', 'en': 'amazon.com', 'de': 'amazon.de', 'es': 'amazon.es'}
+# Elke winkel rekent in zijn eigen munt: 19,99 op amazon.com is $19.99, niet 19,99 euro.
+VALUTA = {'nl': 'EUR', 'en': 'USD', 'de': 'EUR', 'es': 'EUR'}
 DEEL6_MOCKUP = {
     'nl': 'mockups/nl-bekend-gezicht-smartdoorbell-mockup-v1.png',
     'en': 'mockups/en-familiar-face-smartdoorbell-mockup-v1.png',
@@ -103,7 +105,12 @@ def koopblok(n, taal):
     links = (TEKST[n]['ed'][taal]['links'] if n in TEKST else {}) or {}
     uit = []
     def knop(adres, label, prijs, hoofd=False):
-        p = ' <span class="prijs">%s</span>' % e('€ ' + prijs) if prijs else ''
+        # Amazon.com rekent in dollars; alleen de Europese winkels in euro's.
+        if prijs:
+            bedrag = ('$' + prijs.replace(',', '.')) if VALUTA[taal] == 'USD' else ('€ ' + prijs)
+            p = ' <span class="prijs">%s</span>' % e(bedrag)
+        else:
+            p = ''
         return ('<a class="%s" href="%s" target="_blank" rel="noreferrer">%s%s%s</a>'
                 % ('koop hoofd' if hoofd else 'koop', adres, e(label), p, PIJL))
     markt = 'https://www.' + MARKT[taal]
@@ -158,8 +165,14 @@ def schema(n, taal, url):
              "isbn": isbn, "numberOfPages": paginas,
              "url": "https://www.%s/dp/%s" % (MARKT[taal], asin)}
         if prijs:
+            # De verkoper is de winkel, niet deze site: er is hier geen afrekenpagina.
+            # Daarom staat de verkoper er bij en wijst de aanbieding naar de winkelpagina.
             v["offers"] = {"@type": "Offer", "price": prijs.replace(',', '.'),
-                           "priceCurrency": "EUR", "availability": "https://schema.org/InStock"}
+                           "priceCurrency": VALUTA[taal],
+                           "availability": "https://schema.org/InStock",
+                           "url": "https://www.%s/dp/%s" % (MARKT[taal], asin),
+                           "seller": {"@type": "Organization", "name": "Amazon",
+                                      "url": "https://www.%s" % MARKT[taal]}}
         uitvoeringen.append({k: x for k, x in v.items() if x is not None})
     if uitvoeringen:
         s["workExample"] = uitvoeringen
