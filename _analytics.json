@@ -1,7 +1,7 @@
 {
  "_over": "Bezoekersteller. Eigen server op de Mac mini, publiek bereikbaar via Tailscale Funnel. Leeg endpoint = geen enkel script op de site.",
  "aanbieder": "eigen",
- "endpoint": "https://transcriptie.tail3ce102.ts.net/teller/p.gif",
- "cijfers": "https://transcriptie.tail3ce102.ts.net/teller/cijfers.json?k=<sleutel uit ~/Boeken/teller/sleutel.txt>",
+ "endpoint": "https://transcriptie.tail04395f.ts.net/teller/p.gif",
+ "cijfers": "https://transcriptie.tail04395f.ts.net/teller/cijfers.json?k=<sleutel uit ~/Boeken/teller/sleutel.txt>",
  "opmerking": "Geen cookies, geen IP in de database. Unieke bezoekers via een hash van IP+browser met een zout dat dagelijks wisselt."
 }
